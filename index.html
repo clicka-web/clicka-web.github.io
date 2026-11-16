@@ -1,0 +1,1879 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Páginas web para negocios en todo México. Diseña la tuya en vivo y conoce los paquetes desde $1,200 pago único.">
+<meta name="theme-color" content="#06130E">
+<meta property="og:title" content="Clicka · Páginas web para tu negocio">
+<meta property="og:description" content="Diseña tu página en vivo. Paquetes desde $1,200 pago único, con botón de WhatsApp y mapa.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230F4A37'/%3E%3Cpath fill='%23F5BD4A' d='M20 14l29 16.5c1.8 1 1.5 3.5-.5 4l-11.6 3-5.9 11c-.9 1.7-3.5 1.4-3.9-.5L16.6 16.6c-.4-1.9 1.6-3.5 3.4-2.6z'/%3E%3C/svg%3E">
+<title>Clicka · Páginas web para negocios en todo México</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Layout: app-style site. A sticky top bar under a store-awning stripe; every section is its own view, swapped in place.
+     World: a storefront at night — deep green glass, gold signage light and a neon ABIERTO sign. One committed dark look. */
+  :root{
+    --bg:#06130E;
+    --bg2:#0A1B15;
+    --surface:#0E1F18;
+    --line:rgba(214,236,224,.09);
+    --line2:rgba(214,236,224,.17);
+    --ink:#F3F6F1;
+    --muted:#A3B6AD;
+    --dim:#7A8F85;
+    --gold:#F5BD4A;
+    --gold2:#D99413;
+    --gold-soft:#FFE7A8;
+    --gold-ink:#2A1D00;
+    --green:#2BB769;
+    --green2:#1A8A4A;
+    --mint:#8FE3B4;
+    --deep:#0F4A37;
+    --display:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;
+    --body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  [hidden]{display:none!important}
+  html{-webkit-text-size-adjust:100%;scroll-padding-top:96px}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(1000px 520px at 88% -8%,rgba(43,183,105,.16),transparent 62%),radial-gradient(760px 460px at -12% 38%,rgba(245,189,74,.07),transparent 60%)}
+  body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(214,236,224,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(214,236,224,.035) 1px,transparent 1px);background-size:46px 46px;-webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 30%,transparent 75%)}
+  h1,h2,h3,h4,h5,p,ul,ol,figure{margin:0}
+  h1,h2,h3{font-family:var(--display);line-height:1.04;letter-spacing:-.015em;text-wrap:balance}
+  h1{font-size:clamp(2.4rem,5.6vw,4.3rem);font-weight:800}
+  h2{font-size:clamp(1.85rem,4.2vw,2.85rem);font-weight:800}
+  h3{font-size:1.2rem;font-weight:700;line-height:1.2}
+  a{color:inherit}
+  img{max-width:100%}
+  svg{flex:0 0 auto}
+  :where(svg:not([viewBox])){width:20px;height:20px}
+  button{font:inherit;color:inherit}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+  .wrap{max-width:1160px;margin:0 auto;padding-inline:20px}
+  .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mint)}
+  .lead{font-size:1.12rem;color:var(--muted);max-width:38em}
+  .fine{font-size:.86rem;color:var(--dim)}
+  .fine strong{color:var(--ink)}
+  .row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .row.center{justify-content:center}
+  .blk{padding-block:56px}
+  .sec-head{display:grid;gap:12px;max-width:720px;margin-bottom:30px}
+  .page-head{display:grid;gap:14px;padding-block:52px 34px}
+  .page-head > *{max-width:760px}
+  .h-page{font-size:clamp(2.3rem,5.6vw,4rem)}
+  .w100{width:100%}
+
+  /* Buttons and chips */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font:700 1rem/1.1 var(--body);text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s;text-align:center}
+  .btn:active{transform:scale(.97)}
+  .btn svg{width:20px;height:20px}
+  .btn-sm{min-height:42px;padding:0 18px;font-size:.92rem}
+  .btn-gold{background:linear-gradient(180deg,#FFD271,var(--gold) 45%,var(--gold2));color:var(--gold-ink);box-shadow:inset 0 0 0 1px rgba(255,231,168,.6),0 12px 30px -12px rgba(245,189,74,.7)}
+  .btn-gold:hover{box-shadow:inset 0 0 0 1px rgba(255,231,168,.8),0 14px 36px -10px rgba(245,189,74,.85)}
+  .btn-green{background:linear-gradient(180deg,var(--green),var(--green2));color:#fff;box-shadow:0 12px 30px -12px rgba(43,183,105,.8)}
+  .btn-ghost{background:rgba(255,255,255,.04);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line2)}
+  .btn-ghost:hover{background:rgba(255,255,255,.08)}
+  .btn[aria-disabled="true"]{opacity:.55;filter:saturate(.3)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 16px;border-radius:999px;border:1px solid var(--line2);background:rgba(255,255,255,.03);color:var(--ink);font:600 .93rem var(--body);cursor:pointer;text-decoration:none;transition:background .2s,border-color .2s,box-shadow .2s}
+  .chip:hover{border-color:rgba(245,189,74,.6)}
+  .chip svg{width:18px;height:18px}
+  .chip[aria-pressed="true"]{background:rgba(245,189,74,.15);border-color:var(--gold);color:var(--gold-soft);box-shadow:0 0 18px -4px rgba(245,189,74,.55)}
+  .chip-more{color:var(--gold);border-style:dashed}
+  .field{width:100%;min-height:54px;padding:0 18px;border-radius:14px;border:1px solid var(--line2);background:#071510;color:var(--ink);font:500 1.05rem var(--body)}
+  .field::placeholder{color:#5E7469}
+  .field:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 4px rgba(245,189,74,.18)}
+  .fld{display:grid;gap:8px}
+  .fld label,.lbl{font-size:.9rem;font-weight:600;color:var(--ink)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .ico{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(43,183,105,.12);box-shadow:inset 0 0 0 1px rgba(143,227,180,.25);color:var(--mint)}
+  .ico svg{width:22px;height:22px}
+  .glow{position:relative}
+  .glow::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(340px circle at var(--mx,50%) var(--my,-40%),rgba(245,189,74,.10),transparent 60%);opacity:0;transition:opacity .25s}
+  @media (hover:hover){.glow:hover::after{opacity:1}}
+
+  /* Header */
+  .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(6,19,14,.8);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+  .bar{display:flex;align-items:center;gap:18px;height:66px}
+  .brand{display:inline-flex;align-items:center;gap:10px;font:800 1.4rem/1 var(--display);color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+  .brand b{color:var(--gold)}
+  .mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(160deg,var(--deep),#0A3528);display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(143,227,180,.35),0 0 16px rgba(43,183,105,.35)}
+  .mark svg{width:17px;height:17px;color:var(--gold)}
+  .nav{display:flex;gap:2px;margin-left:auto}
+  .nav a{display:inline-flex;align-items:center;gap:6px;padding:8px 13px;border-radius:999px;color:var(--muted);text-decoration:none;font-weight:600;font-size:.94rem}
+  .nav a:hover{color:var(--ink)}
+  .nav a.active{color:var(--ink);background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px var(--line2)}
+  .nav .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold)}
+  .menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line2);background:rgba(255,255,255,.04);place-items:center;cursor:pointer;color:var(--ink)}
+  .menu-btn svg{width:22px;height:22px}
+  .awning{height:6px;background:repeating-linear-gradient(90deg,var(--gold) 0 26px,var(--deep) 26px 52px)}
+  @media (max-width:1020px){.nav{display:none}.menu-btn{display:grid}.top .cta{margin-left:auto}}
+  .sheet{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;gap:2px;padding:calc(14px + env(safe-area-inset-top,0px)) 20px calc(24px + env(safe-area-inset-bottom,0px));background:rgba(5,15,11,.97);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);overflow-y:auto}
+  .sheet-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+  .sheet-head .menu-btn{display:grid}
+  .sheet a.big{display:flex;justify-content:space-between;align-items:center;padding:13px 4px;border-bottom:1px solid var(--line);font:700 1.65rem/1.2 var(--display);text-decoration:none;color:var(--ink)}
+  .sheet a.big svg{width:22px;height:22px;color:var(--dim)}
+  .sheet a.big.active{color:var(--gold)}
+  .sheet .btn{margin-top:22px}
+
+  /* Views */
+  .view.enter{animation:viewIn .4s ease backwards}
+  @keyframes viewIn{from{opacity:0}to{opacity:1}}
+
+  /* Hero */
+  .hero{padding-block:44px 56px}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:36px;align-items:center}
+  .hero-copy{display:grid;gap:18px;justify-items:start}
+  .hl{background:linear-gradient(90deg,var(--gold-soft),var(--gold) 60%,#FFB21A);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .neon{display:inline-flex;align-items:center;gap:10px;font:800 .95rem/1 var(--display);letter-spacing:.24em;color:var(--gold-soft);padding:10px 16px 10px 14px;border-radius:12px;border:2px solid rgba(245,189,74,.9);text-shadow:0 0 6px rgba(245,189,74,.95),0 0 18px rgba(245,189,74,.65);box-shadow:0 0 16px rgba(245,189,74,.45),inset 0 0 14px rgba(245,189,74,.22)}
+  .neon i{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green),0 0 18px var(--green)}
+  .try{width:100%;max-width:560px;display:grid;gap:12px;padding:18px;border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid var(--line2)}
+  .try label{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mint)}
+  .stage{position:relative;display:grid;place-items:center;padding:20px 0;min-width:0}
+  .stage::before{content:"";position:absolute;width:400px;height:400px;max-width:100%;border-radius:50%;background:radial-gradient(closest-side,rgba(43,183,105,.38),transparent);filter:blur(8px)}
+  .phone-wrap{position:relative;z-index:1;width:300px;max-width:100%}
+  .phone-wrap .phone{width:100%}
+  .tag-price{position:absolute;z-index:3;left:-62px;bottom:16%;transform:rotate(-8deg);background:var(--gold);color:var(--gold-ink);font:800 1.5rem/1 var(--display);padding:12px 16px 10px 20px;border-radius:8px;box-shadow:0 14px 30px -10px rgba(0,0,0,.6),0 0 30px -6px rgba(245,189,74,.55)}
+  .tag-price::before{content:"";position:absolute;left:6px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:var(--bg)}
+  .tag-price small{display:block;font:700 .7rem var(--body);margin-top:4px;letter-spacing:.04em}
+  .badge{position:absolute;z-index:3;display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(14,31,24,.9);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid var(--line2);font-size:.86rem;font-weight:700;box-shadow:0 14px 30px -14px rgba(0,0,0,.8);white-space:nowrap}
+  .badge svg{width:18px;height:18px;color:var(--green)}
+  .badge.b2 svg{color:var(--gold)}
+  .badge.b1{right:-58px;top:19%}
+  .badge.b2{right:-44px;bottom:34%}
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+  @media (max-width:640px){.badge{display:none}.tag-price{left:-8px;font-size:1.25rem}}
+
+  /* Phone + mini site */
+  .phone{position:relative;width:300px;max-width:100%;aspect-ratio:300/620;border-radius:48px;padding:11px;background:linear-gradient(155deg,#2A3530,#0A0F0D 42%,#1B2420);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.09),0 50px 90px -40px rgba(0,0,0,.9),0 0 90px -20px rgba(43,183,105,.4)}
+  .phone::before{content:"";position:absolute;z-index:6;top:20px;left:50%;width:86px;height:24px;margin-left:-43px;border-radius:14px;background:#030504}
+  .screen{position:relative;width:100%;height:100%;border-radius:37px;overflow:hidden;background:#fff;color:#1c1c1e;isolation:isolate}
+  .site{position:absolute;inset:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none}
+  .site::-webkit-scrollbar{display:none}
+  .phone.swap .site{animation:swap .55s ease}
+  @keyframes swap{from{opacity:.2;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .ms{min-height:100%;background:#fff;font:400 12.5px/1.45 var(--body);color:#1c1c1e;padding-bottom:74px}
+  .ms svg{width:14px;height:14px}
+  .ms-top{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:8px;padding:38px 14px 10px;background:var(--cd);color:#fff}
+  .ms-logo{width:30px;height:30px;border-radius:50%;background:#fff;color:var(--cd);display:grid;place-items:center;font:800 11px var(--display);overflow:hidden;flex:0 0 auto;box-shadow:0 0 0 2px rgba(255,255,255,.35)}
+  .ms-logo img{width:100%;height:100%;object-fit:cover;display:block}
+  .ms-top b{flex:1;min-width:0;font:700 13.5px/1.15 var(--display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ms-burger{width:16px;height:11px;border-block:2px solid rgba(255,255,255,.9);position:relative;flex:0 0 auto}
+  .ms-burger::after{content:"";position:absolute;left:0;right:0;top:50%;height:2px;margin-top:-1px;background:rgba(255,255,255,.9)}
+  .ms-hero{position:relative;overflow:hidden;padding:20px 14px 22px;background:linear-gradient(155deg,var(--c),var(--cd));color:#fff}
+  .ms-hero .art{position:absolute;right:-20px;top:-6px;width:140px;height:140px;opacity:.17}
+  .ms-loc{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:700;background:rgba(255,255,255,.18);padding:3px 9px 3px 6px;border-radius:99px;max-width:100%}
+  .ms-loc svg{width:12px;height:12px}
+  .ms-hero h4{position:relative;margin:12px 0 6px;font:800 22px/1.02 var(--display);max-width:215px;letter-spacing:-.01em}
+  .ms-hero p{position:relative;margin:0 0 14px;font-size:12px;opacity:.92;max-width:220px}
+  .ms-btn{position:relative;display:inline-flex;align-items:center;gap:6px;background:#25D366;color:#fff;font-weight:700;font-size:11.5px;padding:8px 13px;border-radius:99px;box-shadow:0 6px 14px -6px rgba(0,0,0,.5)}
+  .ms-btn-c{background:var(--c);margin-top:4px}
+  .ms-promo{margin:12px 12px 0;padding:10px 12px;border-radius:12px;border:1.5px dashed var(--c);color:var(--cd);background:#fff;background:color-mix(in srgb,var(--c) 8%,#fff);font-weight:700;display:flex;gap:8px;align-items:center}
+  .ms-sec{padding:16px 14px 2px}
+  .ms-sec h5{margin:0 0 6px;font:800 14.5px/1.1 var(--display);color:var(--cd)}
+  .ms-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #eee}
+  .ms-pr{display:flex;align-items:center;gap:6px;white-space:nowrap}
+  .ms-pr i{font-style:normal;font-weight:800;color:var(--c)}
+  .ms-add{border:0;background:var(--c);color:#fff;border-radius:99px;font:700 10px var(--body);padding:4px 8px;cursor:pointer}
+  .ms-note{font-size:9.5px;color:#9a9aa0;margin-top:5px}
+  .ms-chips{display:flex;gap:5px;flex-wrap:wrap;margin:6px 0}
+  .ms-chip{padding:5px 9px;border-radius:99px;border:1px solid #ddd;font-size:10.5px;font-weight:600;cursor:pointer;background:#fff}
+  .ms-chip.on{background:var(--c);border-color:var(--c);color:#fff}
+  .ms-gal{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px 14px 0}
+  .ms-gal span{aspect-ratio:1;border-radius:12px;display:grid;place-items:center;color:#fff;overflow:hidden}
+  .ms-gal span svg{width:38px;height:38px}
+  .ms-gal .t0{background:linear-gradient(140deg,var(--c),var(--cd))}
+  .ms-gal .t1{background:var(--cd)}
+  .ms-gal .t2{background:#eee;background:color-mix(in srgb,var(--c) 18%,#fff);color:var(--cd)}
+  .ms-gal .t3{background:linear-gradient(140deg,var(--cd),#111)}
+  .ms-gal img{width:100%;height:100%;object-fit:cover;display:block}
+  .ms-muted{color:#6b6b72;font-size:11.5px}
+  .ms-review{display:grid;gap:6px;padding:10px;border-radius:12px;background:#f5f5f7}
+  .ms-stars{color:#F5A623;letter-spacing:2px;font-size:13px}
+  .ms-review small{font-size:10px;color:#86868c}
+  .skel{display:block;height:7px;border-radius:4px;background:#e2e2e8}
+  .ms-map{position:relative;height:96px;margin:8px 0 4px;border-radius:12px;background:linear-gradient(90deg,transparent 46%,#fff 46% 53%,transparent 53%),linear-gradient(0deg,transparent 40%,#fff 40% 48%,transparent 48%),linear-gradient(32deg,transparent 62%,#fff 62% 66%,transparent 66%),#dfe9dc;display:grid;place-items:center;color:#D93025}
+  .ms-map svg{width:30px;height:30px;filter:drop-shadow(0 3px 3px rgba(0,0,0,.25))}
+  .ms-pay{margin:14px 12px 0;padding:12px 14px;border-radius:14px;background:#111;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .ms-pay small{display:block;color:#bbb;font-size:10px}
+  .ms-cards{display:flex;gap:4px}
+  .ms-cards i{width:26px;height:18px;border-radius:4px;background:linear-gradient(135deg,var(--c),var(--cd));box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+  .ms-cards i + i{background:linear-gradient(135deg,#F5BD4A,#D99413)}
+  .ms-foot{padding:22px 14px 10px;text-align:center;color:#9a9aa0;font-size:10px}
+  .ms-float{position:absolute;left:12px;right:12px;bottom:14px;z-index:3;display:flex;align-items:center;justify-content:flex-end;gap:8px;pointer-events:none}
+  .ms-fab{pointer-events:auto;width:42px;height:42px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 8px 18px -6px rgba(0,0,0,.45)}
+  .ms-fab svg{width:22px;height:22px}
+  .ms-cart{pointer-events:auto;flex:1;min-width:0;display:flex;justify-content:space-between;align-items:center;gap:8px;background:#111;color:#fff;border-radius:99px;padding:10px 14px;font:700 11px var(--body);box-shadow:0 8px 18px -6px rgba(0,0,0,.45)}
+  .ms-cart em{font-style:normal;color:#25D366}
+
+  /* Ticker */
+  .ticker{border-block:1px solid var(--line);background:rgba(10,27,21,.6);overflow:hidden;padding-block:16px}
+  .ticker-track{display:flex;width:max-content;animation:tick 42s linear infinite}
+  .ticker-track span{font:700 1.2rem var(--display);color:var(--muted);padding-inline:20px;display:inline-flex;align-items:center;gap:40px;white-space:nowrap}
+  .ticker-track span::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+  @keyframes tick{to{transform:translateX(-50%)}}
+
+  /* Benefits */
+  .benefits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+  .benefit{padding:24px;border-radius:22px;background:linear-gradient(180deg,var(--surface),rgba(14,31,24,.55));border:1px solid var(--line);display:grid;gap:10px;align-content:start}
+  .benefit p{color:var(--muted);font-size:.96rem}
+  @media (max-width:980px){.benefits{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:560px){.benefits{grid-template-columns:1fr}}
+
+  /* Before / after */
+  .ba-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center}
+  .ba-copy{display:grid;gap:14px}
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px}
+  .vs-col{padding:18px;border-radius:18px;border:1px solid var(--line)}
+  .vs-col.no{background:rgba(255,255,255,.02)}
+  .vs-col.si{background:rgba(43,183,105,.08);border-color:rgba(143,227,180,.3)}
+  .vs-col h3{font-size:1.02rem;margin-bottom:12px}
+  .vs-col ul{list-style:none;padding:0;display:grid;gap:9px;font-size:.93rem;color:var(--muted)}
+  .vs-col li{display:grid;grid-template-columns:18px 1fr;gap:9px}
+  .vs-col li::before{content:"";width:16px;height:16px;margin-top:3px;border-radius:50%}
+  .vs-col.no li::before{background:rgba(255,120,100,.16) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FF8A75' stroke-width='3.4' stroke-linecap='round'%3E%3Cpath d='M7 7l10 10M17 7L7 17'/%3E%3C/svg%3E") center/9px no-repeat}
+  .vs-col.si li::before{background:rgba(43,183,105,.2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238FE3B4' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/10px no-repeat}
+  .ba-wrap{display:grid;justify-items:center;gap:14px}
+  .ba:focus-within{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.09),0 0 0 3px var(--gold),0 0 90px -20px rgba(43,183,105,.4)}
+  .chat{position:absolute;inset:0;z-index:1;background:#E6ECE9;display:flex;flex-direction:column;font:400 12px/1.4 var(--body);color:#1c1c1e}
+  .chat-top{display:flex;align-items:center;gap:8px;padding:38px 14px 10px;background:#fff;border-bottom:1px solid #dde3e0}
+  .chat-av{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#9AA8A2,#6E7B75)}
+  .chat-top b{display:block;font-size:13px}
+  .chat-top small{color:#D93025;font-weight:700;font-size:10.5px}
+  .chat-body{flex:1;padding:12px 10px;display:flex;flex-direction:column;gap:7px;overflow:hidden}
+  .chat-body p{max-width:80%;padding:7px 10px 5px;border-radius:12px;background:#fff;box-shadow:0 1px 1px rgba(0,0,0,.06);align-self:flex-start}
+  .chat-body p time{display:block;text-align:right;font-size:9px;color:#8a8f8d;margin-top:2px}
+  .chat-body p.out{align-self:flex-end;background:#D6F2DD}
+  .chat-input{margin:8px 10px 18px;padding:10px 14px;border-radius:99px;background:#fff;color:#99a3a0;font-size:11.5px}
+  .ba-after{position:absolute;inset:0;z-index:2;background:#fff;clip-path:inset(0 0 0 var(--x,50%))}
+  .ba-line{position:absolute;top:0;bottom:0;left:var(--x,50%);z-index:3;width:3px;margin-left:-1.5px;background:var(--gold);box-shadow:0 0 14px var(--gold);pointer-events:none}
+  .ba-knob{position:absolute;top:50%;left:50%;width:42px;height:42px;margin:-21px 0 0 -21px;border-radius:50%;background:var(--gold);color:var(--gold-ink);display:grid;place-items:center;box-shadow:0 0 0 5px rgba(245,189,74,.25),0 8px 20px rgba(0,0,0,.4)}
+  .ba-knob svg{width:20px;height:20px}
+  #baRange{position:absolute;inset:0;z-index:4;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;-webkit-appearance:none;appearance:none;touch-action:pan-y}
+  .ba-legend{display:flex;justify-content:space-between;width:300px;max-width:100%;font-size:.86rem;font-weight:700;color:var(--muted)}
+  @media (max-width:900px){.ba-grid{grid-template-columns:1fr}}
+  @media (max-width:560px){.vs{grid-template-columns:1fr}}
+
+  /* Inicio extras */
+  .strip{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;padding:30px;border-radius:26px;background:linear-gradient(120deg,rgba(15,74,55,.55),rgba(14,31,24,.92));border:1px solid rgba(143,227,180,.18)}
+  .strip h2{margin-top:8px}
+  .strip-prices{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+  .sp{display:grid;gap:2px;padding:14px 16px;border-radius:16px;background:rgba(6,19,14,.6);border:1px solid var(--line);text-decoration:none;transition:border-color .2s}
+  .sp:hover{border-color:rgba(245,189,74,.5)}
+  .sp span{font-size:.85rem;color:var(--muted)}
+  .sp b{font:800 1.4rem/1.2 var(--display);color:var(--gold-soft);font-variant-numeric:tabular-nums}
+  .sp b small{font:600 .78rem var(--body);color:var(--muted)}
+  @media (max-width:760px){.strip{grid-template-columns:1fr;padding:22px}.strip-prices{grid-template-columns:1fr 1fr}}
+  .fwork{display:grid;grid-template-columns:1fr 1fr;align-items:center;border-radius:26px;background:var(--surface);border:1px solid var(--line);overflow:hidden}
+  .fwork-copy{padding:34px;display:grid;gap:14px;justify-items:start}
+  .fwork-copy p{color:var(--muted)}
+  .fwork-mock{height:330px;overflow:hidden;display:grid;justify-items:center;padding-top:28px;background:radial-gradient(circle at 50% 30%,rgba(179,18,29,.45),transparent 65%),#12090A}
+  .fwork-mock .phone{transform:scale(.7);transform-origin:top center}
+  @media (max-width:760px){.fwork{grid-template-columns:1fr}.fwork-copy{padding:24px}}
+  .final{text-align:center;display:grid;justify-items:center;gap:16px;padding:56px 24px;border-radius:30px;background:radial-gradient(600px 300px at 50% 0%,rgba(245,189,74,.14),transparent 70%),linear-gradient(180deg,#0F2A20,#0A1B15);border:1px solid rgba(245,189,74,.25)}
+  .final p{color:var(--muted);max-width:34em}
+
+  /* Simulator */
+  .sim-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:32px;align-items:start;padding-bottom:30px}
+  .sim-ctl{display:grid;gap:14px}
+  .ctl{padding:22px;border-radius:22px;background:var(--surface);border:1px solid var(--line);display:grid;gap:14px}
+  .ctl h3{display:flex;align-items:center;gap:12px;font-size:1.12rem}
+  .ctl h3 em{font:500 .85rem var(--body);color:var(--dim);font-style:normal}
+  .n{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:rgba(245,189,74,.15);color:var(--gold);font:800 .95rem var(--display);box-shadow:inset 0 0 0 1px rgba(245,189,74,.4);flex:0 0 auto}
+  .hint{color:var(--muted);font-size:.9rem;margin-top:-6px}
+  .swatches{display:flex;flex-wrap:wrap;gap:12px}
+  .sw{width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;background:linear-gradient(135deg,var(--sw) 50%,var(--sw2) 50%);box-shadow:0 0 0 2px rgba(255,255,255,.14);transition:transform .15s,box-shadow .15s}
+  .sw[aria-pressed="true"]{box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--gold);transform:scale(1.06)}
+  .vh{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip:rect(0 0 0 0)}
+  .drop{display:flex;align-items:center;gap:14px;padding:16px;border-radius:16px;border:1.5px dashed var(--line2);cursor:pointer;background:rgba(255,255,255,.02);transition:border-color .2s}
+  .drop:hover{border-color:var(--gold)}
+  .vh:focus-visible + .drop{outline:3px solid var(--gold);outline-offset:3px}
+  .drop svg{width:26px;height:26px;color:var(--gold)}
+  .drop small{display:block;color:var(--dim);font-size:.82rem}
+  .link-btn{justify-self:start;background:none;border:0;color:var(--gold);font-weight:700;cursor:pointer;padding:4px 0;text-decoration:underline}
+  .switches{display:grid;gap:4px}
+  .switch{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:14px;cursor:pointer}
+  .switch:hover{background:rgba(255,255,255,.03)}
+  .switch input{position:absolute;opacity:0;width:1px;height:1px}
+  .sw-ui{position:relative;width:44px;height:26px;border-radius:99px;background:rgba(255,255,255,.13);transition:background .2s;flex:0 0 auto}
+  .sw-ui::after{content:"";position:absolute;left:3px;top:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:transform .2s;box-shadow:0 2px 4px rgba(0,0,0,.3)}
+  .switch input:checked + .sw-ui{background:var(--green)}
+  .switch input:checked + .sw-ui::after{transform:translateX(18px)}
+  .switch input:focus-visible + .sw-ui{outline:3px solid var(--gold);outline-offset:2px}
+  .sw-txt{flex:1;min-width:0;font-weight:600}
+  .lvl{font-style:normal;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:6px;white-space:nowrap}
+  .lvl.l1{background:rgba(255,255,255,.08);color:var(--muted)}
+  .lvl.l2{background:rgba(143,227,180,.15);color:var(--mint)}
+  .lvl.l3{background:rgba(245,189,74,.15);color:var(--gold-soft)}
+  .lvl.l4{background:rgba(245,189,74,.32);color:#fff}
+  .sim-prev{position:sticky;top:96px;display:grid;justify-items:center;gap:16px}
+  .prev-close{display:none}
+  .sum{width:100%;padding:20px;border-radius:22px;background:var(--surface);border:1px solid rgba(245,189,74,.35);display:grid;gap:8px;box-shadow:0 0 40px -18px rgba(245,189,74,.5)}
+  .sum-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .sum-row b{font:800 1.6rem/1.1 var(--display)}
+  .sum-row span{font:800 1.3rem/1.1 var(--display);color:var(--gold);font-variant-numeric:tabular-nums}
+  .sum-time{font-size:.92rem;color:var(--muted)}
+  .sum-why{font-size:.92rem;color:var(--mint)}
+  .sum .btn{margin-top:4px}
+  .sim-bar{display:none}
+  @media (max-width:899px){
+    .sim-grid{grid-template-columns:1fr}
+    .sim-prev{position:fixed;inset:0;z-index:80;display:none;align-content:start;overflow-y:auto;padding:calc(14px + env(safe-area-inset-top,0px)) 16px calc(24px + env(safe-area-inset-bottom,0px));background:rgba(4,12,9,.97)}
+    body.prev-open{overflow:hidden}
+    body.prev-open .sim-prev{display:grid}
+    .prev-close{display:inline-flex;justify-self:start}
+    .sim-prev .phone{width:min(300px,80vw)}
+    .sim-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:45;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(6,19,14,.95);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--line2)}
+    .sb-txt small{display:block;color:var(--muted);font-size:.78rem}
+    .sb-txt b{font:800 1.05rem/1.2 var(--display)}
+    section[data-view="pruebalo"]{padding-bottom:84px}
+  }
+
+  /* Packages */
+  .goal{display:grid;gap:12px;margin-bottom:28px}
+  .goal-q{font-weight:700;font-size:1.05rem}
+  .plans{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch;padding-top:8px}
+  .plan{position:relative;display:flex;flex-direction:column;gap:14px;padding:28px 22px 22px;border-radius:24px;background:var(--surface);border:1px solid var(--line);transition:transform .3s,box-shadow .3s,border-color .3s}
+  .plan h3{font-size:1.35rem;font-weight:800}
+  .plan .for{color:var(--muted);font-size:.93rem;min-height:2.9em}
+  .price{font:800 2.3rem/1 var(--display);font-variant-numeric:tabular-nums}
+  .price small{display:block;font:500 .82rem var(--body);color:var(--muted);margin-top:8px}
+  .price .from{font:600 .95rem var(--body);color:var(--muted)}
+  .ticks{list-style:none;padding:0;display:grid;gap:9px;font-size:.93rem;flex:1;align-content:start}
+  .ticks li{display:grid;grid-template-columns:20px 1fr;gap:8px}
+  .ticks li::before{content:"";width:16px;height:16px;margin-top:3px;border-radius:50%;background:rgba(43,183,105,.2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238FE3B4' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/10px no-repeat}
+  .plan.rec{border-color:rgba(245,189,74,.6);background:linear-gradient(180deg,rgba(245,189,74,.10),var(--surface) 40%);box-shadow:0 0 40px -14px rgba(245,189,74,.45)}
+  .ribbon,.pick-label{position:absolute;top:-12px;font:800 .7rem/1 var(--body);letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border-radius:7px}
+  .ribbon{left:20px;background:var(--gold);color:var(--gold-ink)}
+  .pick-label{right:20px;background:var(--green);color:#fff;display:none}
+  .plan.pick{border-color:var(--green);box-shadow:0 0 0 2px var(--green),0 0 50px -10px rgba(43,183,105,.6);transform:translateY(-6px)}
+  .plan.pick .pick-label{display:block}
+  @media (max-width:1020px){.plans{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:24px}}
+  @media (max-width:600px){.plans{grid-template-columns:1fr}.plan .for{min-height:0}}
+  .incl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:24px;color:var(--muted);font-size:.93rem}
+  .incl b{color:var(--ink);margin-right:4px}
+  .incl span{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;border:1px solid var(--line2)}
+  .incl span svg{width:15px;height:15px;color:var(--mint)}
+  .extras{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+  .ex-card{padding:24px;border-radius:22px;background:var(--surface);border:1px solid var(--line);display:grid;gap:10px;align-content:start}
+  .ex-price{font:800 2rem/1.1 var(--display);color:var(--gold-soft)}
+  .ex-price small{font:500 .95rem var(--body);color:var(--muted)}
+  .ex-card p{color:var(--muted)}
+  .rows .r{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line)}
+  .rows .r:last-child{border-bottom:0}
+  .rows b{white-space:nowrap;font-variant-numeric:tabular-nums}
+  @media (max-width:760px){.extras{grid-template-columns:1fr}}
+  .calc{margin-top:28px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:24px 28px;align-items:start;padding:30px;border-radius:26px;background:linear-gradient(135deg,#0F2A20,#0B1C16);border:1px solid rgba(143,227,180,.2)}
+  .calc-copy{grid-column:1/-1;display:grid;gap:10px;max-width:660px}
+  .calc-copy h2{font-size:clamp(1.6rem,3.2vw,2.2rem)}
+  .calc-copy p{color:var(--muted)}
+  .calc-ctl{display:grid;gap:20px}
+  .opt{font-style:normal;font-weight:500;color:var(--dim);font-size:.85rem}
+  .money{position:relative}
+  .money span{position:absolute;left:18px;top:50%;transform:translateY(-50%);font:800 1.25rem var(--display);color:var(--gold-soft);pointer-events:none}
+  .money .field{padding-left:38px;font:800 1.3rem var(--display);font-variant-numeric:tabular-nums}
+  .rg{width:100%;-webkit-appearance:none;appearance:none;height:8px;margin:10px 0 2px;border-radius:99px;background:linear-gradient(90deg,var(--gold) var(--p,50%),rgba(255,255,255,.12) var(--p,50%));cursor:pointer}
+  .rg::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:24px;height:24px;border-radius:50%;background:#fff;border:4px solid var(--gold);box-shadow:0 0 0 6px rgba(245,189,74,.18)}
+  .rg::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:#fff;border:4px solid var(--gold)}
+  .rg-scale{position:relative;height:18px;font-size:.75rem;color:var(--dim);font-variant-numeric:tabular-nums}
+  .rg-scale span{position:absolute;top:0;left:0;white-space:nowrap}
+  .rg-scale span:nth-child(2){transform:translateX(-50%)}
+  .rg-scale span:last-child{left:auto;right:0}
+  .calc-out{position:sticky;top:96px;text-align:center;padding:22px;border-radius:20px;background:rgba(6,19,14,.65);border:1px solid var(--line);display:grid;gap:6px}
+  .calc-badge{justify-self:center;display:inline-flex;align-items:center;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:7px;background:rgba(255,255,255,.08);color:var(--muted)}
+  .calc-badge.ai{background:rgba(245,189,74,.2);color:var(--gold-soft)}
+  .calc-out > p{color:var(--muted);font-size:.95rem}
+  .calc-out .big{font:800 3.2rem/1 var(--display);color:var(--gold);text-shadow:0 0 30px rgba(245,189,74,.35);font-variant-numeric:tabular-nums;margin-top:4px}
+  .calc-out .big-unit{color:var(--gold-soft);font-weight:700;margin-top:-2px}
+  .calc-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+  .calc-stats div{padding:12px 10px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--line);display:grid;gap:2px;align-content:start}
+  .calc-stats b{font:800 1.25rem/1.15 var(--display);color:var(--ink);font-variant-numeric:tabular-nums}
+  .calc-stats span{font-size:.8rem;color:var(--muted)}
+  .calc-out .calc-why{color:var(--mint);font-size:.9rem;margin-top:4px}
+  .calc-out .btn{margin-top:6px}
+  @media (max-width:860px){.calc{grid-template-columns:1fr;padding:22px}.calc-out{position:static}}
+
+  /* Process */
+  .stepper{padding:28px;border-radius:26px;background:var(--surface);border:1px solid var(--line)}
+  .steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;position:relative}
+  .steps::before,.steps::after{content:"";position:absolute;left:10%;top:23px;height:2px}
+  .steps::before{right:10%;background:var(--line2)}
+  .steps::after{width:calc(80% * var(--prog,0));background:linear-gradient(90deg,var(--green),var(--gold));box-shadow:0 0 12px rgba(245,189,74,.5);transition:width .4s}
+  .step{position:relative;z-index:1;width:100%;display:grid;justify-items:center;gap:10px;background:none;border:0;cursor:pointer;color:var(--muted);text-align:center;font-weight:600;font-size:.9rem;padding:0 4px;line-height:1.25}
+  .step .num{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font:800 1.1rem var(--display);background:var(--bg2);border:2px solid var(--line2);color:var(--muted);transition:background .25s,border-color .25s,color .25s,box-shadow .25s}
+  .step.done .num{border-color:var(--green);color:var(--mint)}
+  .step[aria-current="step"]{color:var(--ink)}
+  .step[aria-current="step"] .num{background:var(--gold);border-color:var(--gold);color:var(--gold-ink);box-shadow:0 0 0 6px rgba(245,189,74,.18),0 0 24px rgba(245,189,74,.5)}
+  .step-detail{margin-top:26px;padding:24px;border-radius:20px;background:var(--bg2);border:1px solid var(--line);display:grid;gap:8px;min-height:160px;align-content:start}
+  .step-detail.swap{animation:swap .4s ease}
+  .step-detail .k{color:var(--gold);font-weight:700;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+  .step-detail h3{font-size:1.5rem}
+  .step-detail p{color:var(--muted);max-width:62ch}
+  .step-detail small{color:var(--mint);font-size:.92rem}
+  .step-nav{display:flex;justify-content:space-between;margin-top:16px;gap:10px}
+  @media (max-width:720px){
+    .stepper{padding:20px}
+    .steps{grid-template-columns:repeat(5,48px);justify-content:space-between}
+    .steps::before{left:24px;right:24px}
+    .steps::after{left:24px;width:calc((100% - 48px) * var(--prog,0))}
+    .step .t{display:none}
+  }
+  .two-col{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:16px;margin-top:16px}
+  .card{padding:26px;border-radius:24px;background:var(--surface);border:1px solid var(--line)}
+  .card h2{font-size:clamp(1.5rem,3vw,2rem)}
+  .card > p{color:var(--muted);margin-top:6px}
+  .tl{display:grid;gap:16px;margin-top:22px}
+  .tl-row,.tl-axis{display:grid;grid-template-columns:92px minmax(0,1fr) 104px;gap:12px;align-items:center}
+  .tl-name{font-weight:700}
+  .tl-track{position:relative;height:16px;border-radius:99px;background-color:rgba(255,255,255,.05);background-image:linear-gradient(90deg,var(--line2) 1px,transparent 1px);background-size:calc(100% / 6) 100%}
+  .tl-solid{position:absolute;left:0;top:0;bottom:0;border-radius:99px;background:linear-gradient(90deg,var(--green),var(--mint))}
+  .tl-range{position:absolute;top:0;bottom:0;border-radius:0 99px 99px 0;background:repeating-linear-gradient(135deg,rgba(143,227,180,.6) 0 4px,rgba(143,227,180,.22) 4px 8px)}
+  .tl-val{font-size:.88rem;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+  .tl-ticks{position:relative;height:18px;font-size:.75rem;color:var(--dim);font-variant-numeric:tabular-nums}
+  .tl-ticks span{position:absolute;top:0;transform:translateX(-50%)}
+  .tl-ticks span:first-child{transform:none}
+  .tl-ticks span:last-child{transform:translateX(-100%)}
+  .tl-axis small{font-size:.75rem;color:var(--dim);text-align:right}
+  .tl-legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:.84rem;color:var(--muted)}
+  .tl-legend i{display:inline-block;width:22px;height:10px;border-radius:99px;vertical-align:middle;margin-right:6px}
+  .need-prog{display:flex;align-items:center;gap:12px;margin:16px 0 8px;font-weight:700;font-variant-numeric:tabular-nums}
+  .need-bar{flex:1;height:8px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden}
+  .need-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--gold));transition:width .35s}
+  .need{list-style:none;padding:0;display:grid;gap:2px}
+  .ck{display:flex;align-items:center;gap:12px;padding:8px 6px;border-radius:12px;cursor:pointer}
+  .ck:hover{background:rgba(255,255,255,.03)}
+  .ck input{position:absolute;opacity:0;width:1px;height:1px}
+  .ck-box{width:24px;height:24px;border-radius:8px;border:2px solid var(--line2);display:grid;place-items:center;color:transparent;transition:background .2s,border-color .2s;flex:0 0 auto}
+  .ck-box svg{width:14px;height:14px}
+  .ck input:checked + .ck-box{background:var(--green);border-color:var(--green);color:#fff}
+  .ck input:checked ~ .ck-t{color:var(--dim);text-decoration:line-through}
+  .ck input:focus-visible + .ck-box{outline:3px solid var(--gold);outline-offset:2px}
+  .need-done{margin-top:14px}
+  .pay{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:16px}
+  .pay-box{padding:24px;border-radius:24px;border:1px solid var(--line);background:var(--surface);display:grid;gap:6px;align-content:start}
+  .pay-box b{font:800 2.6rem/1 var(--display);color:var(--gold);font-variant-numeric:tabular-nums}
+  .pay-box span{font-weight:700}
+  .pay-box p{color:var(--muted);font-size:.95rem}
+  @media (max-width:900px){.two-col{grid-template-columns:1fr}}
+  @media (max-width:760px){.pay{grid-template-columns:1fr}}
+  @media (max-width:560px){.tl-row,.tl-axis{grid-template-columns:78px minmax(0,1fr)}.tl-val{grid-column:2;text-align:left;margin-top:-10px}.tl-axis small{display:none}}
+
+  /* Work */
+  .works{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .work{display:flex;flex-direction:column;border-radius:26px;background:var(--surface);border:1px solid var(--line);overflow:hidden;text-decoration:none;color:var(--ink)}
+  .work-mock{height:300px;overflow:hidden;display:grid;justify-items:center;padding-top:28px;flex:0 0 auto}
+  .work-mock .phone{transform:scale(.62);transform-origin:top center}
+  .wm-royal{background:radial-gradient(circle at 50% 35%,rgba(200,30,40,.5),transparent 65%),#160809}
+  .wm-est{background:radial-gradient(circle at 50% 35%,rgba(194,24,91,.45),transparent 65%),#16070E}
+  .work-body{padding:22px 24px 24px;display:grid;gap:10px;align-content:start;flex:1}
+  .work-tag{justify-self:start;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:7px}
+  .work-tag.real{background:rgba(43,183,105,.18);color:var(--mint)}
+  .work-tag.demo{background:rgba(245,189,74,.16);color:var(--gold-soft)}
+  .work-tag.ej{background:rgba(255,255,255,.08);color:var(--muted)}
+  .work-body p{color:var(--muted)}
+  .feat-chips{display:flex;flex-wrap:wrap;gap:6px}
+  .feat-chips span{font-size:.8rem;padding:4px 10px;border-radius:99px;border:1px solid var(--line2);color:var(--muted)}
+  .work-link{justify-self:start;display:inline-flex;align-items:center;gap:8px;margin-top:6px;color:var(--gold);font-weight:700;text-decoration:none}
+  .work-link svg{width:18px;height:18px}
+  .work-cta{align-items:center;justify-content:center;text-align:center;padding:40px 24px;gap:14px;border:1.5px dashed rgba(245,189,74,.45);background:rgba(245,189,74,.04)}
+  .work-cta p{color:var(--muted);max-width:26em}
+  .work-wide{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .work-wide .work-mock{height:100%;min-height:330px}
+  .work-wide .work-body{align-content:center;padding:34px}
+  @media (max-width:760px){.works{grid-template-columns:1fr}.work-wide{grid-template-columns:1fr}.work-wide .work-mock{height:300px;min-height:0}.work-wide .work-body{padding:22px 24px 24px}}
+  .rd{background:#FFF6E6;color:#2B0A0D;font:400 12px/1.4 var(--body)}
+  .rd-top{display:flex;align-items:center;gap:8px;padding:38px 14px 12px;background:#6E0A12}
+  .rd-top svg{width:20px;height:20px;color:#E8B94A}
+  .rd-top b{font:800 14px var(--display);color:#fff}
+  .rd-hero{padding:16px 14px;background:linear-gradient(150deg,#B3121D,#6E0A12);color:#fff}
+  .rd-hero small{font-size:10px;opacity:.85}
+  .rd-hero h4{font:800 20px/1.05 var(--display);margin-top:6px}
+  .rd-map{position:relative;margin:12px;border-radius:14px;overflow:hidden;height:150px}
+  .rd-map svg{width:100%;height:100%;display:block}
+  .rd-eta{position:absolute;left:10px;bottom:10px;background:#fff;border-radius:99px;padding:5px 10px;font-weight:800;font-size:10.5px;box-shadow:0 4px 10px rgba(0,0,0,.15)}
+  .rd-card{margin:0 12px;padding:12px;border-radius:14px;background:#fff;display:flex;justify-content:space-between;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+  .rd-card b{color:#1A8A4A}
+  .rd-btn{display:block;margin:12px;padding:12px;text-align:center;border-radius:99px;background:#E8B94A;color:#2B0A0D;font-weight:800}
+
+  /* FAQ */
+  .faq-tools{max-width:640px;margin-bottom:18px}
+  .search{position:relative}
+  .search svg{position:absolute;left:16px;top:50%;margin-top:-10px;color:var(--dim);pointer-events:none}
+  .search .field{padding-left:48px}
+  .faq{display:grid;gap:10px;max-width:820px}
+  .faq details{border-radius:18px;background:var(--surface);border:1px solid var(--line);transition:border-color .2s,background .2s}
+  .faq details[open]{border-color:rgba(143,227,180,.4);background:linear-gradient(180deg,rgba(43,183,105,.08),var(--surface))}
+  .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 20px;font-weight:700;font-size:1.03rem}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";flex:0 0 auto;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(143,227,180,.45);color:var(--mint);font:800 1.2rem/1 var(--display)}
+  .faq details[open] summary::after{content:"–";background:var(--gold);border-color:var(--gold);color:var(--gold-ink)}
+  .faq details p{padding:0 20px 18px;color:var(--muted);max-width:65ch}
+  .faq-none{color:var(--muted);padding:12px 4px}
+  .faq-none a{color:var(--gold);font-weight:700}
+
+  /* Contact */
+  .c-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .c-card{display:grid;gap:10px;align-content:start;justify-items:start;padding:24px;border-radius:24px;background:var(--surface);border:1px solid var(--line);text-decoration:none;color:var(--ink);text-align:left;cursor:pointer;font:inherit}
+  .c-card p{color:var(--muted)}
+  .c-card .num{font:800 1.6rem/1.1 var(--display);color:var(--ink);-webkit-user-select:all;user-select:all;font-variant-numeric:tabular-nums}
+  .c-go{display:inline-flex;align-items:center;gap:6px;color:var(--gold);font-weight:700}
+  .c-go svg{width:18px;height:18px}
+  .ico.green{background:rgba(43,183,105,.2);color:var(--green)}
+  .agenda{margin-top:18px;padding:28px;border-radius:26px;background:linear-gradient(160deg,#0F2A20,#0B1C16);border:1px solid rgba(143,227,180,.2);display:grid;gap:18px;max-width:780px}
+  .agenda h2{font-size:clamp(1.5rem,3vw,2rem)}
+  .seg{display:inline-flex;flex-wrap:wrap;padding:5px;border-radius:999px;background:rgba(0,0,0,.25);border:1px solid var(--line);gap:4px;justify-self:start}
+  .seg button{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;border:0;background:none;color:var(--muted);font-weight:700;cursor:pointer}
+  .seg button svg{width:18px;height:18px}
+  .seg button[aria-pressed="true"]{background:linear-gradient(180deg,var(--green),var(--green2));color:#fff;box-shadow:0 0 18px rgba(43,183,105,.45)}
+  .cover{display:flex;align-items:center;gap:10px;margin-top:22px;color:var(--muted);font-weight:600}
+  .cover svg{color:var(--gold)}
+  @media (max-width:860px){.c-cards{grid-template-columns:1fr}}
+  @media (max-width:560px){.two{grid-template-columns:1fr}.agenda{padding:22px}.seg{border-radius:20px}.seg button{padding:0 14px}}
+
+  /* Legal */
+  .legal{max-width:760px;display:grid;gap:14px;color:var(--muted);padding-bottom:30px}
+  .legal h2{font-size:1.35rem;color:var(--ink);margin-top:12px}
+  .legal ul{padding-left:20px;display:grid;gap:6px}
+
+  /* Footer, floating button, toast */
+  footer{border-top:1px solid var(--line);margin-top:48px;padding-block:34px calc(34px + env(safe-area-inset-bottom,0px));background:rgba(4,13,10,.6)}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:flex-start}
+  .foot p{color:var(--muted);font-size:.92rem;max-width:30em;margin-top:10px}
+  .foot nav{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.92rem}
+  .foot nav a{color:var(--muted);text-decoration:none}
+  .foot nav a:hover{color:var(--ink)}
+  .foot small{display:block;width:100%;color:var(--dim)}
+  .float-wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,var(--green),var(--green2));color:#fff;box-shadow:0 12px 30px -8px rgba(43,183,105,.75)}
+  .float-wa svg{width:30px;height:30px}
+  @media (max-width:899px){body[data-view="pruebalo"] .float-wa{display:none}}
+  .toast{position:fixed;left:50%;bottom:calc(100px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:120;background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:14px;font-weight:700;box-shadow:0 14px 30px -10px rgba(0,0,0,.6);max-width:calc(100% - 32px);text-align:center}
+  .toast.show{animation:toastIn .3s ease}
+  @keyframes toastIn{from{opacity:0;transform:translate(-50%,10px)}}
+
+  @media (prefers-reduced-motion:no-preference){
+    .neon{animation:flick 2.2s ease-out 1 both}
+    @keyframes flick{0%,6%,12%{opacity:.35}3%,9%,15%,100%{opacity:1}}
+    .phone-wrap .phone{animation:bob 6s ease-in-out infinite}
+    .badge.b1{animation:bob 5s ease-in-out .4s infinite}
+    .badge.b2{animation:bob 5.5s ease-in-out 1s infinite}
+    @keyframes bob{50%{transform:translateY(-8px)}}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .ticker-track{animation:none;flex-wrap:wrap;width:auto}
+    *{scroll-behavior:auto!important}
+  }
+</style>
+</head>
+<body>
+
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+  <symbol id="i-wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.1c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.2 1.2-4-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.6C5.3 9.8 10.1 5 16 5s10.6 4.8 10.6 10.6S21.9 26.2 16 26.2zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7 0-.3-.2-1.3-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.1 2.9 1.1 3.5.9 4.1.8.6-.1 1.9-.8 2.2-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.4z"/></symbol>
+  <symbol id="i-cursor" viewBox="0 0 24 24"><path fill="currentColor" d="M5.6 3.1l13.2 7.5c.8.5.7 1.6-.2 1.8l-5.3 1.4-2.7 5c-.4.8-1.6.7-1.8-.2L4.1 4.4c-.2-.9.7-1.6 1.5-1.3z"/></symbol>
+  <symbol id="i-crown" viewBox="0 0 24 24"><path fill="currentColor" d="M3 8.5l4.6 3.6L12 5l4.4 7.1L21 8.5 19.2 19H4.8z"/></symbol>
+  <symbol id="i-pinf" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22s-7.5-6.6-7.5-12.2a7.5 7.5 0 0 1 15 0C19.5 15.4 12 22 12 22z"/><circle cx="12" cy="9.8" r="2.8" fill="#FFFFFF"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></g></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></g></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></g></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v8M4.5 3v4.5a2.5 2.5 0 0 0 5 0V3M7 11v10M17.5 21V3c-2.2 1.2-3.5 3.6-3.5 7v3h3.5"/></g></symbol>
+  <symbol id="i-scissors" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6.5" r="2.8"/><circle cx="6" cy="17.5" r="2.8"/><path d="M8.3 8.2 20 18.5M8.3 15.8 20 5.5"/></g></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></g></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></g></symbol>
+  <symbol id="i-health" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><path d="M12 8v8M8 12h8"/></g></symbol>
+  <symbol id="i-gym" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 7v10M3.5 9.5v5M17.5 7v10M20.5 9.5v5M6.5 12h11"/></g></symbol>
+  <symbol id="i-hammer" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 6.5 17.5 3 21 6.5l-3.5 4z"/><path d="M15.5 8.5 4.2 19.8a1.5 1.5 0 0 0 2.1 2.1L17.6 10.6"/></g></symbol>
+  <symbol id="i-cake" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5.5 21v-7.5h13V21M5.5 17c1.6 1 3.4 1 5 0s3.4-1 5 0 2.2.6 3 .2M12 13.5V9.5"/><path d="M12 7.5c-1-.8-1-2 0-3.5 1 1.5 1 2.7 0 3.5z"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></g></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></g></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M11 18h2"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.3-7.5 9.5-4.3-1.2-7.5-4.9-7.5-9.5V6z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></g></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></g></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></g></symbol>
+  <symbol id="i-call" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></g></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="13" height="12" rx="2.5"/><path d="M15.5 10.5l6-3.5v10l-6-3.5z"/></g></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3.5 6v14L9 18l6 2 5.5-2V4L15 6z"/><path d="M9 4v14M15 6v14"/></g></symbol>
+  <symbol id="i-drag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></g></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></g></symbol>
+  <symbol id="i-party" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a5.5 5.5 0 0 1 5.5 5.7c0 3.5-2.9 6.8-5.5 6.8s-5.5-3.3-5.5-6.8A5.5 5.5 0 0 1 12 3z"/><path d="M11 15.5l-.8 1.6h3.6l-.8-1.6M12 17.1c0 1.6-1.5 2.4-1.5 3.9"/></g></symbol>
+  <symbol id="i-paw" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="9.5" r="2"/><circle cx="12" cy="6" r="2"/><circle cx="17.5" cy="9.5" r="2"/><path d="M7.5 17.5c0-2.8 2-5 4.5-5s4.5 2.2 4.5 5c0 1.7-1.3 2.5-2.6 2.5-.9 0-1.3-.5-1.9-.5s-1 .5-1.9.5c-1.3 0-2.6-.8-2.6-2.5z"/></g></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5h6a2.5 2.5 0 0 1 2.5 2.5V20a2 2 0 0 0-2-2H3.5zM20.5 5h-6A2.5 2.5 0 0 0 12 7.5V20a2 2 0 0 1 2-2h6.5z"/></g></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 13l1.8-5.2A2 2 0 0 1 7.2 6.5h9.6a2 2 0 0 1 1.9 1.3l1.8 5.2v4.5h-17z"/><path d="M3.5 13h17"/><circle cx="7.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></g></symbol>
+  <symbol id="i-shirt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 3.5 3 6.5l2 4 2.2-1V20.5h9.6V9.5l2.2 1 2-4-5.5-3a3.5 3.5 0 0 1-7 0z"/></g></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12.5h18"/></g></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10.5V20h15v-9.5"/><path d="M3 9.5 4.6 4.5h14.8L21 9.5c0 1.4-1.1 2.5-2.5 2.5S16 10.9 16 9.5c0 1.4-1.1 2.5-2.5 2.5h-3C9.1 12 8 10.9 8 9.5 8 10.9 6.9 12 5.5 12S3 10.9 3 9.5z"/><path d="M10 20v-5h4v5"/></g></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6.5 15h4"/></g></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#inicio" aria-label="Clicka, ir al inicio"><span class="mark"><svg><use href="#i-cursor"/></svg></span>Clicka<b>.</b></a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#inicio" data-nav>Inicio</a>
+      <a href="#pruebalo" data-nav>Pruébalo<i class="dot" aria-hidden="true"></i></a>
+      <a href="#paquetes" data-nav>Paquetes</a>
+      <a href="#proceso" data-nav>Cómo trabajo</a>
+      <a href="#trabajos" data-nav>Trabajos</a>
+      <a href="#preguntas" data-nav>Preguntas</a>
+    </nav>
+    <a class="btn btn-gold btn-sm cta" href="#contacto" data-nav>Cotizar</a>
+    <button class="menu-btn" type="button" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="sheet"><svg><use href="#i-menu"/></svg></button>
+  </div>
+  <div class="awning" aria-hidden="true"></div>
+</header>
+
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-head">
+    <span class="brand"><span class="mark"><svg><use href="#i-cursor"/></svg></span>Clicka<b>.</b></span>
+    <button class="menu-btn" type="button" id="sheetClose" aria-label="Cerrar menú"><svg><use href="#i-close"/></svg></button>
+  </div>
+  <a class="big" href="#inicio" data-nav>Inicio<svg><use href="#i-arrow"/></svg></a>
+  <a class="big" href="#pruebalo" data-nav>Pruébalo<svg><use href="#i-arrow"/></svg></a>
+  <a class="big" href="#paquetes" data-nav>Paquetes<svg><use href="#i-arrow"/></svg></a>
+  <a class="big" href="#proceso" data-nav>Cómo trabajo<svg><use href="#i-arrow"/></svg></a>
+  <a class="big" href="#trabajos" data-nav>Trabajos<svg><use href="#i-arrow"/></svg></a>
+  <a class="big" href="#preguntas" data-nav>Preguntas<svg><use href="#i-arrow"/></svg></a>
+  <a class="big" href="#contacto" data-nav>Contacto<svg><use href="#i-arrow"/></svg></a>
+  <a class="btn btn-green wa-link" href="#" target="_blank" rel="noopener" data-msg="Hola, quiero información sobre una página web para mi negocio"><svg><use href="#i-wa"/></svg>Escribir por WhatsApp</a>
+</div>
+
+<main>
+  <!-- ===================== INICIO ===================== -->
+  <section class="view" data-view="inicio">
+    <div class="wrap hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="neon" aria-hidden="true"><i></i>ABIERTO</div>
+          <p class="eyebrow">Páginas web para negocios en todo México</p>
+          <h1>Tu negocio, <span class="hl">abierto en internet</span> las 24 horas.</h1>
+          <p class="lead">Hago la página de tu taquería, estética, taller o tienda. Tus clientes te encuentran, ven tus precios y te escriben directo por WhatsApp.</p>
+          <div class="try">
+            <label for="heroNombre">Escribe el nombre de tu negocio y mira tu página</label>
+            <input class="field" id="heroNombre" type="text" maxlength="40" autocomplete="organization" placeholder="Tacos El Güero">
+            <div class="chips" role="group" aria-label="Giro de tu negocio">
+              <button class="chip" type="button" data-giro="comida" aria-pressed="true"><svg><use href="#i-food"/></svg>Comida</button>
+              <button class="chip" type="button" data-giro="estetica" aria-pressed="false"><svg><use href="#i-scissors"/></svg>Estética</button>
+              <button class="chip" type="button" data-giro="taller" aria-pressed="false"><svg><use href="#i-wrench"/></svg>Taller</button>
+              <button class="chip" type="button" data-giro="tienda" aria-pressed="false"><svg><use href="#i-bag"/></svg>Tienda</button>
+              <a class="chip chip-more" href="#pruebalo" data-pick-otro>Otro giro<svg><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+          <div class="row">
+            <a class="btn btn-gold" href="#pruebalo">Diseñar mi página completa<svg><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#paquetes">Ver paquetes</a>
+          </div>
+          <p class="fine">Desde <strong>$1,200 pago único</strong> · 50% al empezar y 50% al entregar</p>
+        </div>
+        <div class="stage">
+          <div class="phone-wrap">
+            <div class="phone" id="heroPhone"><div class="screen" data-live><div class="site"></div><div class="ms-float"></div></div></div>
+            <div class="tag-price" aria-hidden="true">$1,200<small>PAGO ÚNICO</small></div>
+            <div class="badge b1" aria-hidden="true"><svg><use href="#i-wa"/></svg>Te escriben por WhatsApp</div>
+            <div class="badge b2" aria-hidden="true"><svg><use href="#i-pin"/></svg>Tu ubicación en el mapa</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Taquerías</span><span>Estéticas</span><span>Barberías</span><span>Talleres</span><span>Tiendas</span><span>Consultorios</span><span>Gimnasios</span><span>Ferreterías</span><span>Reposterías</span><span>Fondas</span><span>Papelerías</span><span>Florerías</span>
+        <span>Taquerías</span><span>Estéticas</span><span>Barberías</span><span>Talleres</span><span>Tiendas</span><span>Consultorios</span><span>Gimnasios</span><span>Ferreterías</span><span>Reposterías</span><span>Fondas</span><span>Papelerías</span><span>Florerías</span>
+      </div>
+    </div>
+
+    <div class="wrap blk">
+      <div class="sec-head">
+        <p class="eyebrow">Qué ganas</p>
+        <h2>Una página que trabaja aunque tu negocio esté cerrado</h2>
+      </div>
+      <div class="benefits">
+        <article class="benefit glow"><span class="ico"><svg><use href="#i-search"/></svg></span><h3>Que te encuentren</h3><p>Tu página y tu perfil en Google Maps (desde el paquete Básico) muestran dónde estás, tu horario y tus fotos cuando alguien busca lo que vendes.</p></article>
+        <article class="benefit glow"><span class="ico"><svg><use href="#i-chat"/></svg></span><h3>Te escriben ya decididos</h3><p>Ven tus precios y servicios antes de escribirte. Con un botón ya están en tu WhatsApp.</p></article>
+        <article class="benefit glow"><span class="ico"><svg><use href="#i-mobile"/></svg></span><h3>Hecha para el celular</h3><p>Casi todos tus clientes te van a ver desde su teléfono. Tu página está pensada para eso.</p></article>
+        <article class="benefit glow"><span class="ico"><svg><use href="#i-shield"/></svg></span><h3>Es tuya</h3><p>La cuenta de tu página y tu dominio quedan a tu nombre. Si un día cambias de proveedor, te la llevas.</p></article>
+      </div>
+    </div>
+
+    <div class="wrap blk">
+      <div class="ba-grid">
+        <div class="ba-copy">
+          <p class="eyebrow">Antes y después</p>
+          <h2>Deja de contestar lo mismo todo el día</h2>
+          <p class="lead">Desliza la barra dorada sobre el celular y compara.</p>
+          <div class="vs">
+            <div class="vs-col no"><h3>Sin página</h3><ul><li>Te preguntan precio, horario y ubicación, uno por uno</li><li>Si tardas en contestar, el cliente se va con otro</li><li>Solo te encuentra quien ya te sigue</li></ul></div>
+            <div class="vs-col si"><h3>Con página</h3><ul><li>Precios, horario y mapa a un toque</li><li>Te escriben clientes que ya saben lo que quieren</li><li>Tienes un enlace para compartir en todas partes</li></ul></div>
+          </div>
+        </div>
+        <div class="ba-wrap">
+          <div class="phone ba" id="ba">
+            <div class="screen">
+              <div class="chat">
+                <div class="chat-top"><span class="chat-av"></span><div><b>Mensajes</b><small>12 sin leer</small></div></div>
+                <div class="chat-body">
+                  <p>Hola, ¿qué precios manejan?<time>9:02</time></p>
+                  <p>¿Abren hoy?<time>9:15</time></p>
+                  <p>¿Dónde están ubicados?<time>10:41</time></p>
+                  <p>¿Tienen servicio a domicilio?<time>12:07</time></p>
+                  <p>Hola, ¿cuánto cuesta?<time>13:30</time></p>
+                  <p>¿Siguen abiertos?<time>21:48</time></p>
+                  <p class="out">Perdón, apenas vi tu mensaje…<time>22:30</time></p>
+                </div>
+                <div class="chat-input">Escribe un mensaje</div>
+              </div>
+              <div class="ba-after" data-live><div class="site"></div><div class="ms-float"></div></div>
+              <div class="ba-line"><span class="ba-knob"><svg><use href="#i-drag"/></svg></span></div>
+              <input type="range" id="baRange" min="0" max="100" value="50" aria-label="Comparar: sin página a la izquierda, con página a la derecha">
+            </div>
+          </div>
+          <div class="ba-legend"><span>Sin página</span><span>Con página</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap blk">
+      <div class="strip glow">
+        <div><p class="eyebrow">Paquetes de pago único</p><h2>Elige el tamaño de tu página</h2></div>
+        <a class="btn btn-gold" href="#paquetes">Comparar paquetes<svg><use href="#i-arrow"/></svg></a>
+        <div class="strip-prices">
+          <a class="sp" href="#paquetes"><span>Arranque</span><b>$1,200</b></a>
+          <a class="sp" href="#paquetes"><span>Básico</span><b>$2,900</b></a>
+          <a class="sp" href="#paquetes"><span>Negocio</span><b>$5,500</b></a>
+          <a class="sp" href="#paquetes"><span>Plataforma</span><b><small>desde </small>$9,900</b></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap blk">
+      <article class="fwork glow">
+        <div class="fwork-copy">
+          <p class="eyebrow">Trabajo real</p>
+          <h2>Royal Delivery</h2>
+          <p>Plataforma de entregas y mandados en Atotonilco de Tula, Hidalgo. Los clientes piden y pagan en línea, ven el mapa con la ubicación exacta, y los negocios y repartidores tienen su propio panel.</p>
+          <div class="row"><a class="btn btn-gold" data-work="royal" data-name="Royal Delivery" href="#" target="_blank" rel="noopener"><span>Ver la página</span><svg><use href="#i-arrow"/></svg></a><a class="btn btn-ghost" href="#trabajos">Ver trabajos</a></div>
+        </div>
+        <div class="fwork-mock" data-royal></div>
+      </article>
+    </div>
+
+    <div class="wrap blk">
+      <div class="final">
+        <div class="neon" aria-hidden="true"><i></i>ABIERTO</div>
+        <h2>¿Abrimos tu negocio en internet?</h2>
+        <p>Escríbeme, llámame o agenda una videollamada. Trabajo con negocios de todo México.</p>
+        <div class="row center">
+          <a class="btn btn-green wa-link" href="#" target="_blank" rel="noopener" data-msg="Hola, quiero una página para mi negocio"><svg><use href="#i-wa"/></svg>Escribir por WhatsApp</a>
+          <a class="btn btn-ghost" href="#contacto">Agendar videollamada</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRUÉBALO ===================== -->
+  <section class="view" data-view="pruebalo" hidden>
+    <div class="wrap page-head">
+      <p class="eyebrow">Simulador</p>
+      <h1 class="h-page">Diseña tu página en un minuto</h1>
+      <p class="lead">Escribe tus datos, elige color y secciones. Ves el resultado al instante y te digo qué paquete necesitas.</p>
+    </div>
+    <div class="wrap sim-grid">
+      <div class="sim-ctl">
+        <section class="ctl">
+          <h3><span class="n">1</span>Tu negocio</h3>
+          <div class="two">
+            <div class="fld"><label for="simNombre">Nombre</label><input class="field" id="simNombre" type="text" maxlength="40" autocomplete="organization" placeholder="Ej. Tacos El Güero"></div>
+            <div class="fld"><label for="simCiudad">Ciudad</label><input class="field" id="simCiudad" type="text" maxlength="40" autocomplete="address-level2" placeholder="Ej. Huehuetoca"></div>
+          </div>
+        </section>
+        <section class="ctl">
+          <h3><span class="n">2</span>Giro</h3>
+          <div class="chips" id="simGiros" role="group" aria-label="Giro de tu negocio"></div>
+          <div class="fld" id="otroBox" hidden><label for="simOtro">¿Qué tipo de negocio es?</label><input class="field" id="simOtro" type="text" maxlength="40" placeholder="Ej. Jardín de eventos, plomería, clases de inglés"></div>
+        </section>
+        <section class="ctl">
+          <h3><span class="n">3</span>Color</h3>
+          <div class="swatches" id="simColores" role="group" aria-label="Color principal"></div>
+        </section>
+        <section class="ctl">
+          <h3><span class="n">4</span>Tu logo <em>opcional</em></h3>
+          <input class="vh" type="file" id="simLogo" accept="image/*">
+          <label class="drop" for="simLogo"><svg><use href="#i-upload"/></svg><span><b>Sube tu logo o una foto</b><small>Tu imagen no sale de tu celular; solo se usa en esta vista previa.</small></span></label>
+          <button class="link-btn" type="button" id="logoQuitar" hidden>Quitar imagen</button>
+        </section>
+        <section class="ctl">
+          <h3><span class="n">5</span>Secciones</h3>
+          <p class="hint">Junto a cada sección ves el paquete que la incluye.</p>
+          <div class="switches" id="simSecs"></div>
+        </section>
+      </div>
+      <aside class="sim-prev" id="simPrev" aria-label="Vista previa de tu página">
+        <button class="btn btn-ghost btn-sm prev-close" type="button" id="prevClose"><svg><use href="#i-left"/></svg>Seguir editando</button>
+        <div class="phone"><div class="screen" data-live><div class="site"></div><div class="ms-float"></div></div></div>
+        <div class="sum glow">
+          <p class="eyebrow">Tu paquete sugerido</p>
+          <div class="sum-row"><b data-sum="name">Arranque</b><span data-sum="price">$1,200</span></div>
+          <p class="sum-time">Lista en <span data-sum="time">3 a 5 días</span></p>
+          <p class="sum-why" data-sum="why"></p>
+          <a class="btn btn-green w100" data-sum="wa" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Quiero esta página</a>
+          <a class="btn btn-ghost w100" href="#paquetes">Ver qué incluye</a>
+          <p class="fine">Es una vista previa de ejemplo. Tu página real lleva tus fotos, tus precios y tus textos.</p>
+        </div>
+      </aside>
+    </div>
+    <div class="sim-bar">
+      <div class="sb-txt"><small>Paquete sugerido</small><b><span data-sum="name">Arranque</span> · <span data-sum="price">$1,200</span></b></div>
+      <button class="btn btn-gold btn-sm" type="button" id="prevOpen">Ver mi página</button>
+    </div>
+  </section>
+
+  <!-- ===================== PAQUETES ===================== -->
+  <section class="view" data-view="paquetes" hidden>
+    <div class="wrap page-head">
+      <p class="eyebrow">Paquetes · pago único</p>
+      <h1 class="h-page">Elige el tamaño de tu página</h1>
+      <p class="lead">Todos incluyen botón de WhatsApp, mapa de ubicación y diseño para celular. Pagas 50% para empezar y el resto cuando apruebas tu página.</p>
+    </div>
+    <div class="wrap">
+      <div class="goal">
+        <p class="goal-q">¿Qué quieres lograr con tu página?</p>
+        <div class="chips" role="group" aria-label="Lo que quieres lograr">
+          <button class="chip" type="button" data-goal="0" aria-pressed="false">Que me encuentren y me escriban</button>
+          <button class="chip" type="button" data-goal="1" aria-pressed="false">Verme más profesional</button>
+          <button class="chip" type="button" data-goal="2" aria-pressed="false">Mostrar varios servicios o sucursales</button>
+          <button class="chip" type="button" data-goal="3" aria-pressed="false">Vender y cobrar en línea</button>
+        </div>
+      </div>
+
+      <div class="plans">
+        <article class="plan glow">
+          <span class="pick-label">Tu opción</span>
+          <h3>Arranque</h3>
+          <p class="for">Para empezar a tener presencia en internet.</p>
+          <div class="price">$1,200<small>pago único · lista en 3 a 5 días</small></div>
+          <ul class="ticks"><li>Una página con nombre y descripción</li><li>Hasta 6 servicios o productos</li><li>4 fotos de tu negocio</li><li>Horario, mapa y WhatsApp</li><li>1 ronda de cambios</li></ul>
+          <a class="btn btn-ghost w100 wa-link" href="#" target="_blank" rel="noopener" data-msg="Hola, me interesa el paquete Arranque para mi negocio">Elegir Arranque</a>
+        </article>
+        <article class="plan rec glow">
+          <span class="ribbon">Recomendado</span><span class="pick-label">Tu opción</span>
+          <h3>Básico</h3>
+          <p class="for">Para negocios que quieren verse más profesionales.</p>
+          <div class="price">$2,900<small>pago único · lista en 1 semana</small></div>
+          <ul class="ticks"><li>Todo lo de Arranque</li><li>Diseño con los colores de tu marca</li><li>Galería de hasta 12 fotos</li><li>“Quiénes somos” y opiniones</li><li>Alta en Google Maps</li><li>2 rondas de cambios</li></ul>
+          <a class="btn btn-gold w100 wa-link" href="#" target="_blank" rel="noopener" data-msg="Hola, me interesa el paquete Básico para mi negocio">Elegir Básico</a>
+        </article>
+        <article class="plan glow">
+          <span class="pick-label">Tu opción</span>
+          <h3>Negocio</h3>
+          <p class="for">Para negocios con varios servicios o sucursales.</p>
+          <div class="price">$5,500<small>pago único · lista en 1 a 2 semanas</small></div>
+          <ul class="ticks"><li>Todo lo de Básico</li><li>Hasta 5 secciones o páginas</li><li>Formulario de contacto o citas</li><li>Preguntas frecuentes y promociones</li><li>Conexión con Facebook e Instagram</li><li>2 rondas de cambios</li></ul>
+          <a class="btn btn-ghost w100 wa-link" href="#" target="_blank" rel="noopener" data-msg="Hola, me interesa el paquete Negocio para mi negocio">Elegir Negocio</a>
+        </article>
+        <article class="plan glow">
+          <span class="pick-label">Tu opción</span>
+          <h3>Plataforma</h3>
+          <p class="for">Para vender y cobrar en línea, con sistema propio.</p>
+          <div class="price"><span class="from">desde </span>$9,900<small>se cotiza por proyecto · 3 a 6 semanas</small></div>
+          <ul class="ticks"><li>Todo lo de Negocio</li><li>Catálogo con pedidos en línea</li><li>Pagos automáticos con tarjeta</li><li>Cuentas para clientes, negocios o repartidores</li><li>Mapa con ubicación y seguimiento</li><li>Calificaciones y zonas de envío</li></ul>
+          <a class="btn btn-ghost w100 wa-link" href="#" target="_blank" rel="noopener" data-msg="Hola, quiero cotizar una Plataforma para mi negocio">Cotizar Plataforma</a>
+        </article>
+      </div>
+
+      <div class="incl">
+        <b>Todos incluyen:</b>
+        <span><svg><use href="#i-check"/></svg>Diseño para celular</span>
+        <span><svg><use href="#i-check"/></svg>Botón de WhatsApp</span>
+        <span><svg><use href="#i-check"/></svg>Mapa de ubicación</span>
+        <span><svg><use href="#i-check"/></svg>Cuenta a tu nombre</span>
+        <span><svg><use href="#i-check"/></svg>Vista previa antes de pagar el resto</span>
+      </div>
+
+      <div class="extras">
+        <div class="ex-card glow">
+          <p class="eyebrow">Opcional</p>
+          <h3>Mantenimiento mensual</h3>
+          <div class="ex-price">$199 <small>al mes</small></div>
+          <p>Mantengo tu página al día y hago los cambios pequeños que necesites: precios, fotos, horarios o promociones. Me mandas un WhatsApp y lo actualizo.</p>
+        </div>
+        <div class="ex-card glow">
+          <h3>Extras sin mensualidad</h3>
+          <div class="rows">
+            <div class="r"><span>Cambio pequeño después de entregar</span><b>$80</b></div>
+            <div class="r"><span>Sección nueva</span><b>$400</b></div>
+            <div class="r"><span>Menú o catálogo</span><b>desde $800</b></div>
+            <div class="r"><span>Dominio propio (.com o .mx), por año</span><b>$220 a $310</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc glow" id="calc">
+        <div class="calc-copy">
+          <p class="eyebrow">Haz cuentas</p>
+          <h2>¿En cuánto tiempo recuperas tu página?</h2>
+          <p>Dime qué negocio tienes y cuánto cobras. Yo estimo cuántos clientes nuevos te podría traer tu página y en cuánto tiempo se paga sola.</p>
+        </div>
+        <div class="calc-ctl">
+          <div class="fld"><span class="lbl">Tu negocio</span>
+            <div class="chips" id="roiGiros" role="group" aria-label="Tu negocio"></div>
+            <div class="fld" id="roiOtroBox" hidden><label for="roiOtro">¿Qué tipo de negocio es?</label><input class="field" id="roiOtro" type="text" maxlength="40" placeholder="Ej. Jardín de eventos"></div>
+          </div>
+          <div class="fld"><label for="roiTicket">¿Cuánto cobras en promedio por venta o servicio?</label>
+            <div class="money"><span aria-hidden="true">$</span><input class="field" id="roiTicket" type="text" inputmode="numeric" autocomplete="off"></div>
+            <input class="rg" type="range" id="roiTicketR" min="0" max="1000" step="1" aria-label="Ajustar cuánto cobras">
+            <div class="rg-scale" aria-hidden="true"><span>$20</span><span style="left:42.5%">$1,000</span><span>$200,000</span></div>
+          </div>
+          <div class="fld"><span class="lbl">Paquete</span>
+            <div class="chips" role="group" aria-label="Paquete para el cálculo">
+              <button class="chip" type="button" data-roi="1" aria-pressed="true">Arranque</button>
+              <button class="chip" type="button" data-roi="2" aria-pressed="false">Básico</button>
+              <button class="chip" type="button" data-roi="3" aria-pressed="false">Negocio</button>
+              <button class="chip" type="button" data-roi="4" aria-pressed="false">Plataforma</button>
+            </div>
+          </div>
+          <div class="fld"><label for="roiCiudad">Ciudad <em class="opt">opcional</em></label><input class="field" id="roiCiudad" type="text" maxlength="40" autocomplete="address-level2" placeholder="Ej. Huehuetoca"></div>
+        </div>
+        <div class="calc-out" aria-live="polite">
+          <span class="calc-badge" id="roiBadge">Estimado automático</span>
+          <p>Clientes nuevos que te podría traer tu página</p>
+          <div class="big" id="roiCli">4 a 10</div>
+          <p class="big-unit">al mes</p>
+          <div class="calc-stats">
+            <div><b id="roiN">10</b><span id="roiNlbl">ventas para recuperarla</span></div>
+            <div><b id="roiT">1 a 3 meses</b><span>tiempo estimado</span></div>
+          </div>
+          <p class="calc-why" id="roiWhy"></p>
+          <button class="btn btn-gold w100" type="button" id="roiAI" hidden><svg><use href="#i-spark"/></svg><span>Afinar con IA</span></button>
+          <p class="fine">Es un estimado aproximado: depende de cuánto compartas tu página y de tu zona. No es una promesa de ventas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESO ===================== -->
+  <section class="view" data-view="proceso" hidden>
+    <div class="wrap page-head">
+      <p class="eyebrow">Cómo trabajo</p>
+      <h1 class="h-page">De tu WhatsApp a tu página, paso por paso</h1>
+      <p class="lead">Todo se hace a distancia, por WhatsApp, llamada o videollamada. Los tiempos cuentan desde que tengo tu información completa y el anticipo.</p>
+    </div>
+    <div class="wrap">
+      <div class="stepper glow">
+        <ol class="steps" id="steps"></ol>
+        <div class="step-detail" id="stepDetail" aria-live="polite"></div>
+        <div class="step-nav">
+          <button class="btn btn-ghost btn-sm" type="button" id="stepPrev"><svg><use href="#i-left"/></svg>Anterior</button>
+          <button class="btn btn-gold btn-sm" type="button" id="stepNext">Siguiente<svg><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="card glow">
+          <h2>¿Cuánto tarda?</h2>
+          <p>Entre más sencilla la página, más rápido queda.</p>
+          <div class="tl" id="tl"></div>
+          <div class="tl-legend"><span><i style="background:linear-gradient(90deg,#2BB769,#8FE3B4)"></i>Tiempo mínimo</span><span><i style="background:repeating-linear-gradient(135deg,rgba(143,227,180,.6) 0 4px,rgba(143,227,180,.22) 4px 8px)"></i>Puede tardar hasta</span></div>
+        </div>
+        <div class="card glow">
+          <h2>Lo que necesito de ti</h2>
+          <p>Ve juntando esto. Marca lo que ya tienes.</p>
+          <div class="need-prog"><span id="needTxt">0 de 11 listos</span><span class="need-bar"><i id="needBar"></i></span></div>
+          <ul class="need" id="need"></ul>
+          <a class="btn btn-green w100 need-done wa-link" id="needDone" href="#" target="_blank" rel="noopener" data-msg="Hola, ya tengo toda la información para mi página" hidden><svg><use href="#i-wa"/></svg>Ya tengo todo, mandar por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="pay">
+        <div class="pay-box glow"><b>50%</b><span>Para empezar</span><p>Con el anticipo aparto tu lugar y empiezo a trabajar.</p></div>
+        <div class="pay-box glow"><b>50%</b><span>Al aprobar tu página</span><p>Pagas el resto cuando ya la viste en tu celular y te gustó.</p></div>
+        <div class="pay-box glow"><b>100%</b><span>Tuya</span><p>La cuenta de tu página y tu dominio quedan a tu nombre.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRABAJOS ===================== -->
+  <section class="view" data-view="trabajos" hidden>
+    <div class="wrap page-head">
+      <p class="eyebrow">Trabajos</p>
+      <h1 class="h-page">Proyectos y ejemplos</h1>
+      <p class="lead">Un proyecto real y un ejemplo de lo que puedo hacer para tu negocio.</p>
+    </div>
+    <div class="wrap works">
+      <article class="work work-wide glow">
+        <div class="work-mock wm-royal" data-royal></div>
+        <div class="work-body">
+          <span class="work-tag real">Proyecto real</span>
+          <h3>Royal Delivery</h3>
+          <p>Plataforma de entregas y mandados en Atotonilco de Tula, Hidalgo, con registro para clientes, negocios afiliados y repartidores.</p>
+          <div class="feat-chips"><span>Pedidos en línea</span><span>Mapa con ubicación exacta</span><span>Pagos con tarjeta o efectivo</span><span>Panel para negocios</span><span>Panel para repartidores</span></div>
+          <a class="work-link" data-work="royal" data-name="Royal Delivery" href="#" target="_blank" rel="noopener"><span>Pídeme que te la muestre</span><svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="work glow">
+        <div class="work-mock wm-est">
+          <div class="phone"><div class="screen" data-static><div class="site"></div><div class="ms-float"></div></div></div>
+        </div>
+        <div class="work-body">
+          <span class="work-tag ej">Ejemplo</span>
+          <h3>Plantilla Arranque</h3>
+          <p>Así se ve una página del paquete Arranque para una estética: servicios con precio, fotos, horario, mapa y botón de WhatsApp.</p>
+          <div class="feat-chips"><span>Lista en 3 a 5 días</span><span>$1,200 pago único</span></div>
+          <a class="work-link" href="#pruebalo" style="color:var(--gold)"><span>Probar con mi negocio</span><svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <a class="work work-cta glow" href="#pruebalo">
+        <span class="ico"><svg><use href="#i-spark"/></svg></span>
+        <h3>Tu negocio aquí</h3>
+        <p>Diseña tu página en el simulador y mira cómo quedaría antes de pagar nada.</p>
+        <span class="btn btn-gold">Diseñar mi página<svg><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== PREGUNTAS ===================== -->
+  <section class="view" data-view="preguntas" hidden>
+    <div class="wrap page-head">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h1 class="h-page">Lo que más me preguntan</h1>
+    </div>
+    <div class="wrap">
+      <div class="faq-tools">
+        <div class="search"><svg><use href="#i-search"/></svg><input class="field" id="faqQ" type="search" placeholder="Busca tu duda, por ejemplo “dominio”" aria-label="Buscar en preguntas frecuentes"></div>
+      </div>
+      <div class="faq" id="faq">
+        <details><summary>¿Necesito saber de computación?</summary><p>No. Tú me mandas la información por WhatsApp y yo hago todo: diseño, publicación y, desde el paquete Básico, tu alta en Google Maps.</p></details>
+        <details><summary>¿Cuánto tarda mi página?</summary><p>Arranque queda en 3 a 5 días, Básico en 1 semana, Negocio en 1 a 2 semanas y Plataforma en 3 a 6 semanas. El tiempo empieza a contar cuando me mandas tu información completa y el anticipo.</p></details>
+        <details><summary>¿Cómo se paga?</summary><p>Pagas 50% para empezar y el otro 50% cuando apruebas tu página, después de verla en tu celular.</p></details>
+        <details><summary>¿Qué pasa si no me gusta?</summary><p>Antes de pagar el resto te muestro la página y la corriges. Cada paquete incluye rondas de cambios para dejarla como la quieres.</p></details>
+        <details><summary>¿Qué es una ronda de cambios?</summary><p>Me mandas en un solo mensaje todo lo que quieras ajustar, por ejemplo un color, una foto, un texto o un precio, y lo corrijo todo junto. Arranque incluye 1 ronda y los demás paquetes 2. Algo que no estaba acordado, como una sección nueva, se cotiza aparte.</p></details>
+        <details><summary>¿Qué pasa si mi negocio necesita algo diferente?</summary><p>Cada proyecto se cotiza según lo que necesitas. Mándame por WhatsApp qué quieres en tu página y te armo un plan a la medida, con precio y tiempo de entrega, antes de empezar.</p></details>
+        <details><summary>¿Trabajas con negocios fuera de mi ciudad?</summary><p>Sí, trabajo con negocios de todo México. Todo se hace por WhatsApp, llamada o videollamada.</p></details>
+        <details><summary>¿La página queda a mi nombre?</summary><p>Sí. Abro la cuenta de tu página con el correo de tu negocio y te entrego los accesos. Si compras un dominio, también queda a tu nombre. Si un día dejamos de trabajar juntos, tu página se queda contigo.</p></details>
+        <details><summary>¿Hay que pagar algo después?</summary><p>Una página sencilla puede funcionar en un plan gratuito. Si tu negocio crece y necesita un plan de pago o quieres un dominio propio, lo pagas directo al proveedor, a tu nombre. El mantenimiento de $199 al mes es opcional.</p></details>
+        <details><summary>¿Qué es el dominio y lo necesito?</summary><p>Es la dirección de tu página, por ejemplo tunegocio.com. No es obligatorio para empezar. Si lo quieres, te ayudo a comprarlo a tu nombre; cuesta entre $220 y $310 al año.</p></details>
+        <details><summary>¿Puedo cambiar precios o fotos después?</summary><p>Sí. Con el mantenimiento mensual los cambios pequeños van incluidos. Sin mensualidad, cada cambio pequeño cuesta $80.</p></details>
+        <details><summary>Ya tengo Facebook, ¿para qué quiero página?</summary><p>Facebook no siempre aparece cuando alguien busca en Google. Una página te da un lugar fijo con tus precios, horario y ubicación, y la puedes poner en tu Facebook e Instagram.</p></details>
+        <details><summary>¿El simulador es mi página final?</summary><p>No. Es una vista previa de ejemplo para que te des una idea. Tu página real lleva tus fotos, tus precios, tus textos y un diseño hecho para tu negocio.</p></details>
+      </div>
+      <p class="faq-none" id="faqNone" hidden>No encontré esa pregunta. <a class="wa-link" href="#" target="_blank" rel="noopener" data-msg="Hola, tengo una duda sobre las páginas web">Pregúntame por WhatsApp</a>.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section class="view" data-view="contacto" hidden>
+    <div class="wrap page-head">
+      <p class="eyebrow">Contacto</p>
+      <h1 class="h-page">Platiquemos de tu página</h1>
+      <p class="lead">Trabajo con negocios de todo México. Escríbeme, llámame o agenda una videollamada.</p>
+    </div>
+    <div class="wrap">
+      <div class="c-cards">
+        <a class="c-card glow wa-link" href="#" target="_blank" rel="noopener" data-msg="Hola, quiero una página para mi negocio">
+          <span class="ico green"><svg><use href="#i-wa"/></svg></span>
+          <h3>WhatsApp</h3>
+          <p>La forma más rápida. Respondo el mismo día.</p>
+          <span class="c-go">Escribir ahora<svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <div class="c-card glow">
+          <span class="ico"><svg><use href="#i-call"/></svg></span>
+          <h3>Llamada</h3>
+          <p class="num" id="numTxt" data-num>773 226 1733</p>
+          <div class="row">
+            <a class="btn btn-ghost btn-sm" data-tel href="tel:+527732261733">Llamar</a>
+            <button class="btn btn-ghost btn-sm" type="button" data-copy>Copiar número</button>
+          </div>
+        </div>
+        <div class="c-card glow">
+          <span class="ico"><svg><use href="#i-video"/></svg></span>
+          <h3>Videollamada</h3>
+          <p>Agenda unos minutos y te muestro ejemplos en vivo para tu tipo de negocio.</p>
+          <button class="btn btn-ghost btn-sm" type="button" data-scroll="agendaBox">Agendar<svg><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+
+      <div class="agenda glow" id="agendaBox">
+        <h2>Agenda una llamada o videollamada</h2>
+        <div class="seg" role="group" aria-label="Tipo de cita">
+          <button type="button" data-modo="videollamada" aria-pressed="true"><svg><use href="#i-video"/></svg>Videollamada</button>
+          <button type="button" data-modo="llamada" aria-pressed="false"><svg><use href="#i-call"/></svg>Llamada</button>
+        </div>
+        <div class="fld"><span class="lbl">Día</span><div class="chips" id="bkDias" role="group" aria-label="Día"></div></div>
+        <div class="fld"><span class="lbl">Hora</span><div class="chips" id="bkHoras" role="group" aria-label="Hora"></div></div>
+        <div class="two">
+          <div class="fld"><label for="bkNombre">Tu nombre</label><input class="field" id="bkNombre" type="text" maxlength="40" autocomplete="name"></div>
+          <div class="fld"><label for="bkNegocio">Tu negocio y ciudad</label><input class="field" id="bkNegocio" type="text" maxlength="60" placeholder="Ej. Estética Bella, Tultepec"></div>
+        </div>
+        <a class="btn btn-green w100" id="bkSend" href="#" target="_blank" rel="noopener" aria-disabled="true"><svg><use href="#i-wa"/></svg><span>Elige día y hora</span></a>
+        <p class="fine">Se abre tu WhatsApp con el mensaje listo y te confirmo el horario por ahí. Esta página no guarda tus datos.</p>
+      </div>
+      <p class="cover"><svg><use href="#i-map"/></svg>Cobertura en todo México. Todo se hace a distancia.</p>
+    </div>
+  </section>
+
+  <!-- ===================== AVISO DE PRIVACIDAD ===================== -->
+  <section class="view" data-view="aviso" hidden>
+    <div class="wrap page-head">
+      <p class="eyebrow">Legal</p>
+      <h1 class="h-page">Aviso de privacidad</h1>
+    </div>
+    <div class="wrap legal">
+      <p>Cristian Alexis Amador Martínez, con domicilio en Atotonilco de Tula, Hidalgo, es responsable del uso de tus datos personales. Puedes contactarme por WhatsApp al <span data-num>773 226 1733</span>.</p>
+      <h2>Qué datos uso</h2>
+      <p>Tu nombre, tu número de WhatsApp o teléfono, el nombre y los datos de tu negocio, y la información que me compartas para hacer tu página: textos, fotos, logo, precios, horario, ubicación y el correo de tu negocio.</p>
+      <h2>Para qué los uso</h2>
+      <ul><li>Responder tus mensajes y agendar llamadas o videollamadas.</li><li>Cotizar y hacer tu página.</li><li>Abrir las cuentas de tu página a nombre de tu negocio.</li><li>Darle mantenimiento a tu página, si lo contratas.</li></ul>
+      <p>No vendo tus datos ni los uso para publicidad.</p>
+      <h2>Con quién se comparten</h2>
+      <p>Solo con los servicios necesarios para publicar tu página, como el servicio donde se aloja y el registro de dominio, siempre a nombre de tu negocio.</p>
+      <h2>Esta página</h2>
+      <p>No usa cookies de publicidad. El simulador funciona en tu dispositivo y no envía tus datos; las imágenes que subes no salen de tu celular. La lista “Lo que necesito de ti” guarda en tu navegador las casillas que marcas, solo en tu dispositivo. Los formularios abren tu WhatsApp con un mensaje listo; nada se envía hasta que tú lo mandas.</p>
+      <h2>Tus derechos</h2>
+      <p>Puedes pedir acceder a tus datos, corregirlos, cancelarlos u oponerte a su uso escribiéndome al contacto de arriba.</p>
+      <h2>Cambios</h2>
+      <p>Cualquier cambio a este aviso se publicará en esta página. Última actualización: 2 de noviembre de 2026.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="#inicio"><span class="mark"><svg><use href="#i-cursor"/></svg></span>Clicka<b>.</b></a>
+      <p>Páginas web para negocios en todo México. WhatsApp <span data-num>773 226 1733</span>.</p>
+    </div>
+    <nav aria-label="Pie de página">
+      <a href="#pruebalo">Pruébalo</a><a href="#paquetes">Paquetes</a><a href="#proceso">Cómo trabajo</a><a href="#trabajos">Trabajos</a><a href="#preguntas">Preguntas</a><a href="#contacto">Contacto</a><a href="#aviso">Aviso de privacidad</a>
+    </nav>
+    <small>© <span data-year>2026</span> Clicka</small>
+  </div>
+</footer>
+
+<a class="float-wa wa-link" href="#" target="_blank" rel="noopener" data-msg="Hola, quiero información sobre una página web para mi negocio" aria-label="Escribir por WhatsApp"><svg><use href="#i-wa"/></svg></a>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(() => {
+  'use strict';
+
+  /* ======================= CAMBIA AQUÍ TUS DATOS ======================= */
+  const CFG = {
+    whatsapp: '527732261733',                 // 52 + tu número a 10 dígitos, sin espacios
+    numero: '773 226 1733',                   // como se ve en la página
+    horarios: ['1:30 pm', '2:30 pm', '3:30 pm', '4:30 pm', '5:30 pm', '6:30 pm', '7:30 pm', '8:30 pm', '9:30 pm'],   // horas que ofreces para llamadas
+    links: { royal: 'https://royaldelivery2026.netlify.app' }   // enlace público de cada trabajo
+  };
+  /* ===================================================================== */
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  const waUrl = msg => 'https://wa.me/' + CFG.whatsapp + '?text=' + encodeURIComponent(msg);
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* sin almacenamiento */ } }
+  };
+  const norm = s => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const listJoin = a => a.length <= 1 ? (a[0] || '') : a.slice(0, -1).join(', ') + ' y ' + a[a.length - 1];
+
+  /* ---------- Datos ---------- */
+  const GIROS = {
+    comida: { label: 'Comida', full: 'Taquería o comida', ticket: 120, cli: [8, 20], margen: .35, icon: 'i-food', demo: 'Tacos El Güero', titulo: 'Tacos, tortas y antojitos', frase: 'Pide para llevar o a domicilio.', sec: 'Menú', cta: 'Pedir por WhatsApp', color: 'rojo', promo: 'Martes de 2x1 en tacos al pastor', items: [['Taco al pastor', '$18'], ['Orden de 5 tacos', '$80'], ['Torta de suadero', '$65'], ['Agua fresca', '$25']], horario: [['Lunes a sábado', '6 pm – 12 am'], ['Domingo', '2 pm – 11 pm']] },
+    estetica: { label: 'Estética', full: 'Estética o barbería', ticket: 250, cli: [4, 10], margen: .5, icon: 'i-scissors', demo: 'Estética Bella', titulo: 'Corte, color y uñas', frase: 'Agenda tu cita en un minuto.', sec: 'Servicios', cta: 'Agendar por WhatsApp', color: 'rosa', promo: '15% de descuento en tu primera visita', items: [['Corte de cabello', '$120'], ['Tinte completo', '$450'], ['Uñas gelish', '$250'], ['Barba y bigote', '$90']], horario: [['Martes a sábado', '10 am – 8 pm'], ['Domingo', '10 am – 3 pm']] },
+    taller: { label: 'Taller', full: 'Taller mecánico', ticket: 900, cli: [2, 6], margen: .4, icon: 'i-wrench', demo: 'Taller Hermanos Ruiz', titulo: 'Afinación, frenos y diagnóstico', frase: 'Cotiza tu servicio sin salir de casa.', sec: 'Servicios', cta: 'Cotizar por WhatsApp', color: 'azul', promo: 'Revisión de frenos sin costo con tu afinación', items: [['Afinación menor', '$650'], ['Cambio de aceite', '$450'], ['Balatas delanteras', '$700'], ['Diagnóstico por computadora', '$300']], horario: [['Lunes a viernes', '9 am – 6 pm'], ['Sábado', '9 am – 2 pm']] },
+    tienda: { label: 'Tienda', full: 'Tienda o abarrotes', ticket: 150, cli: [6, 18], margen: .22, icon: 'i-bag', demo: 'Abarrotes La Esquina', titulo: 'Todo lo que necesitas, cerca de ti', frase: 'Haz tu pedido y te lo llevamos.', sec: 'Productos', cta: 'Hacer pedido', color: 'naranja', promo: 'Envío gratis en compras de más de $300', items: [['Despensa básica', 'desde $250'], ['Refresco 2 L', '$38'], ['Recargas', 'desde $20'], ['Garrafón de agua', '$45']], horario: [['Todos los días', '7 am – 10 pm']] },
+    consultorio: { label: 'Consultorio', full: 'Consultorio médico o dental', ticket: 450, cli: [2, 6], margen: .55, icon: 'i-health', demo: 'Consultorio Dental Sonríe', titulo: 'Consulta general y dental', frase: 'Agenda tu cita y evita filas.', sec: 'Servicios', cta: 'Agendar cita', color: 'azul', promo: 'Valoración sin costo en tu primera cita', items: [['Consulta general', '$350'], ['Limpieza dental', '$500'], ['Resina', '$600'], ['Certificado médico', '$150']], horario: [['Lunes a viernes', '9 am – 7 pm'], ['Sábado', '9 am – 1 pm']] },
+    gym: { label: 'Gimnasio', full: 'Gimnasio', ticket: 450, cli: [2, 8], margen: .6, icon: 'i-gym', demo: 'Gym Fuerza Total', titulo: 'Entrena cerca de tu casa', frase: 'Visita, mensualidad y clases.', sec: 'Planes', cta: 'Quiero inscribirme', color: 'negro', promo: 'Inscripción sin costo este mes', items: [['Visita', '$40'], ['Mensualidad', '$450'], ['Clase de box', '$60'], ['Plan estudiante', '$350']], horario: [['Lunes a viernes', '6 am – 10 pm'], ['Sábado', '8 am – 2 pm']] },
+    ferreteria: { label: 'Ferretería', full: 'Ferretería', ticket: 400, cli: [3, 10], margen: .25, icon: 'i-hammer', demo: 'Ferretería El Clavo', titulo: 'Material y herramienta', frase: 'Cotiza tu material por WhatsApp.', sec: 'Productos', cta: 'Cotizar material', color: 'naranja', promo: 'Entrega a domicilio en tu colonia', items: [['Cemento 50 kg', '$260'], ['Pintura vinílica 19 L', '$1,150'], ['Juego de desarmadores', '$180'], ['Copia de llave', '$35']], horario: [['Lunes a sábado', '8 am – 7 pm'], ['Domingo', '9 am – 2 pm']] },
+    reposteria: { label: 'Repostería', full: 'Repostería', ticket: 350, cli: [3, 8], margen: .45, icon: 'i-cake', demo: 'Dulce Antojo', titulo: 'Pasteles para cada ocasión', frase: 'Encarga el tuyo con anticipación.', sec: 'Menú', cta: 'Encargar pastel', color: 'rosa', promo: 'Pedidos con 2 días de anticipación', items: [['Pastel para 20 personas', '$480'], ['Cupcakes (6)', '$150'], ['Gelatina mosaico', '$120'], ['Pay de queso', '$220']], horario: [['Martes a domingo', '10 am – 8 pm']] }
+  };
+  /* Giro "Otro": el perfil se elige por las palabras que escribe el cliente */
+  const OTROS = {
+    mascotas: { kw: ['veterinari', 'mascota', 'perro', 'gato', 'canin', 'grooming', 'acuario'], icon: 'i-paw', color: 'naranja', frase: 'Cuidamos a tu mascota como de la familia.', sec: 'Servicios', cta: 'Agendar cita', promo: 'Baño gratis en tu quinta visita', items: [['Consulta', '$300'], ['Vacuna', 'desde $250'], ['Baño y corte', 'desde $200'], ['Desparasitación', '$150']], horario: [['Lunes a sábado', '10 am – 7 pm']], ticket: 350, cli: [3, 8], margen: .45 },
+    belleza: { kw: ['salon de belleza', 'belleza', 'spa', 'masaje', 'unas$', 'pestana', 'maquillaje', 'barber', 'cabello', 'depila', 'ceja', 'estetica', 'peluquer'], icon: 'i-scissors', color: 'rosa', frase: 'Agenda tu cita en un minuto.', sec: 'Servicios', cta: 'Agendar por WhatsApp', promo: '15% de descuento en tu primera visita', items: [['Uñas acrílicas', '$350'], ['Pestañas', '$400'], ['Masaje relajante', '$450'], ['Maquillaje', '$500']], horario: [['Martes a sábado', '10 am – 8 pm']], ticket: 350, cli: [4, 10], margen: .5 },
+    eventos: { kw: ['jardin', 'salon', 'evento', 'fiesta', 'banquete', 'boda', 'xv$', 'quince', 'inflable', 'mobiliario', 'silla', 'carpa', 'dj$', 'fotograf', 'videograf', 'decoracion', 'globo', 'animacion', 'payaso', 'mariachi', 'grupo musical', 'catering', 'brincolin'], icon: 'i-party', color: 'morado', frase: 'Aparta tu fecha y cotiza por WhatsApp.', sec: 'Paquetes', cta: 'Cotizar mi evento', promo: 'Aparta tu fecha con un anticipo', items: [['Paquete para 50 personas', 'desde $9,000'], ['Paquete para 100 personas', 'desde $25,000'], ['Mobiliario y mantelería', 'desde $3,500'], ['Música y DJ', 'desde $4,000']], horario: [['Visitas', 'Lunes a sábado, con cita']], ticket: 25000, cli: [1, 3], margen: .45 },
+    salud: { kw: ['dentist', 'doctor', 'medic', 'clinica', 'laboratorio', 'optica', 'psicolog', 'nutriolog', 'fisioterap', 'terapia', 'quiropract', 'pediatr', 'ginecolog', 'consultorio', 'enfermer'], icon: 'i-health', color: 'azul', frase: 'Agenda tu cita por WhatsApp.', sec: 'Servicios', cta: 'Agendar cita', promo: 'Valoración sin costo en tu primera cita', items: [['Consulta', '$350'], ['Valoración', '$250'], ['Tratamiento', 'desde $600'], ['Seguimiento', '$300']], horario: [['Lunes a viernes', '9 am – 7 pm'], ['Sábado', '9 am – 1 pm']], ticket: 450, cli: [2, 6], margen: .55 },
+    educacion: { kw: ['clase', 'escuela', 'colegio', 'academia', 'curso', 'regulariza', 'idioma', 'ingles', 'musica', 'natacion', 'danza', 'baile', 'karate', 'taekwondo', 'futbol', 'guarderia', 'estancia', 'tutor', 'manejo'], icon: 'i-book', color: 'verde', frase: 'Inscripciones abiertas. Pide informes.', sec: 'Cursos', cta: 'Pedir informes', promo: 'Clase muestra sin costo', items: [['Inscripción', 'desde $300'], ['Mensualidad', 'desde $800'], ['Clase muestra', 'sin costo'], ['Material', 'desde $250']], horario: [['Lunes a viernes', '3 pm – 8 pm'], ['Sábado', '9 am – 1 pm']], ticket: 800, cli: [1, 4], margen: .5 },
+    gimnasio: { kw: ['gimnasio', 'gym', 'crossfit', 'yoga', 'pilates', 'box$', 'entrenador', 'zumba', 'funcional'], icon: 'i-gym', color: 'negro', frase: 'Visita, mensualidad y clases.', sec: 'Planes', cta: 'Quiero inscribirme', promo: 'Inscripción sin costo este mes', items: [['Visita', '$40'], ['Mensualidad', '$450'], ['Clase grupal', '$60'], ['Plan pareja', '$800']], horario: [['Lunes a viernes', '6 am – 10 pm'], ['Sábado', '8 am – 2 pm']], ticket: 450, cli: [2, 8], margen: .6 },
+    reposteria: { kw: ['pastel', 'postre', 'panader', 'galleta', 'reposter', 'dulce', 'chocolate', 'gelatina', 'cupcake', 'pay$'], icon: 'i-cake', color: 'rosa', frase: 'Encarga el tuyo con anticipación.', sec: 'Menú', cta: 'Hacer pedido', promo: 'Pedidos con 2 días de anticipación', items: [['Pastel para 20 personas', '$480'], ['Postre individual', '$55'], ['Caja de galletas', '$120'], ['Pay de queso', '$220']], horario: [['Martes a domingo', '10 am – 8 pm']], ticket: 350, cli: [3, 8], margen: .45 },
+    comida: { kw: ['restaurant', 'cocina', 'taquer', 'tortill', 'fonda', 'pizz', 'hamburgues', 'marisco', 'cafe', 'pollo', 'birria', 'antojito', 'comida', 'tamal', 'torta', 'taco', 'hot dog', 'snack', 'elote', 'nieve', 'helado', 'paleta', 'jugo', 'licuado', 'cerveza', 'bar$', 'carniceria', 'carnitas', 'barbacoa', 'sushi', 'alitas', 'pozole', 'gordita', 'quesadilla', 'cenaduria', 'lonche'], icon: 'i-food', color: 'rojo', frase: 'Pide para llevar o a domicilio.', sec: 'Menú', cta: 'Pedir por WhatsApp', promo: 'Combo del día con bebida incluida', items: [['Platillo del día', '$95'], ['Orden para compartir', '$190'], ['Bebidas', 'desde $25'], ['Postre', '$45']], horario: [['Todos los días', '1 pm – 10 pm']], ticket: 150, cli: [8, 20], margen: .35 },
+    autos: { kw: ['auto', 'carro', 'lavado', 'llanter', 'refaccion', 'hojalater', 'mecanic', 'moto', 'vulcaniz'], icon: 'i-car', color: 'azul', frase: 'Cotiza tu servicio por WhatsApp.', sec: 'Servicios', cta: 'Cotizar por WhatsApp', promo: '10% de descuento en tu primer servicio', items: [['Lavado sencillo', '$120'], ['Lavado completo', '$250'], ['Cambio de llanta', 'desde $150'], ['Alineación y balanceo', '$450']], horario: [['Lunes a sábado', '8 am – 6 pm']], ticket: 350, cli: [4, 10], margen: .4 },
+    ferreteria: { kw: ['ferreter', 'tlapaler', 'material', 'acero', 'cemento', 'pintura', 'block'], icon: 'i-hammer', color: 'naranja', frase: 'Cotiza tu material por WhatsApp.', sec: 'Productos', cta: 'Cotizar material', promo: 'Entrega a domicilio en tu colonia', items: [['Material de construcción', 'Cotizar'], ['Pintura', 'desde $350'], ['Herramienta', 'desde $150'], ['Plomería y electricidad', 'desde $50']], horario: [['Lunes a sábado', '8 am – 7 pm']], ticket: 400, cli: [3, 10], margen: .25 },
+    servicios: { kw: ['plomer', 'electric', 'limpieza', 'fumiga', 'jardiner', 'carpinter', 'herrer', 'pintor', 'albanil', 'construc', 'mudanza', 'repara', 'tecnico', 'refrigera', 'clima', 'cerrajer', 'vidrio', 'tablaroca', 'impermeabiliz', 'instalac', 'mantenimiento', 'lavanderia', 'tintoreria', 'costura', 'sastre', 'computadora'], icon: 'i-wrench', color: 'azul', frase: 'Servicio a domicilio. Cotiza sin compromiso.', sec: 'Servicios', cta: 'Pedir cotización', promo: 'Visita de diagnóstico sin costo en tu colonia', items: [['Visita y diagnóstico', 'desde $250'], ['Reparación', 'desde $500'], ['Instalación', 'desde $800'], ['Mantenimiento', 'desde $600']], horario: [['Lunes a sábado', '8 am – 7 pm']], ticket: 1200, cli: [2, 6], margen: .5 },
+    moda: { kw: ['ropa', 'boutique', 'zapat', 'tenis', 'calzado', 'joyer', 'bisuter', 'perfum', 'bolsa', 'lenceria', 'uniforme', 'moda'], icon: 'i-shirt', color: 'rosa', frase: 'Lo nuevo de la temporada, con envío en tu ciudad.', sec: 'Productos', cta: 'Pedir por WhatsApp', promo: 'Envío gratis en compras de más de $800', items: [['Blusas', 'desde $199'], ['Pantalones', 'desde $350'], ['Tenis', 'desde $650'], ['Accesorios', 'desde $99']], horario: [['Todos los días', '11 am – 8 pm']], ticket: 450, cli: [4, 12], margen: .35 },
+    tienda: { kw: ['abarrote', 'miscelan', 'papeler', 'farmacia', 'minisuper', 'tienda', 'regalo', 'celular', 'accesorio', 'electronic', 'cosmetic', 'merceria', 'novedad', 'juguet', 'libreria', 'flor'], icon: 'i-bag', color: 'naranja', frase: 'Haz tu pedido y te lo llevamos.', sec: 'Productos', cta: 'Hacer pedido', promo: 'Envío gratis en compras de más de $300', items: [['Producto destacado', 'desde $99'], ['Paquete o combo', 'desde $199'], ['Novedades', 'desde $49'], ['Pedido a domicilio', 'gratis desde $300']], horario: [['Todos los días', '8 am – 9 pm']], ticket: 200, cli: [6, 18], margen: .25 },
+    profesional: { kw: ['abogad', 'contador', 'contab', 'despacho', 'notari', 'arquitect', 'diseno', 'agencia', 'marketing', 'publicidad', 'consultor', 'seguro', 'inmobiliari', 'bienes raices', 'gestor', 'tramite'], icon: 'i-briefcase', color: 'negro', frase: 'Asesoría clara y a tiempo.', sec: 'Servicios', cta: 'Agendar asesoría', promo: 'Primera asesoría de 15 minutos sin costo', items: [['Asesoría inicial', 'desde $400'], ['Trámite', 'desde $1,500'], ['Servicio mensual', 'desde $1,200'], ['Consulta en línea', 'desde $350']], horario: [['Lunes a viernes', '9 am – 6 pm']], ticket: 1500, cli: [1, 4], margen: .6 },
+    generico: { kw: [], icon: 'i-store', color: 'verde', frase: 'Conoce lo que ofrecemos y escríbenos.', sec: 'Lo que ofrecemos', cta: 'Pedir informes', promo: 'Pregunta por la promoción del mes', items: [['Producto o servicio principal', 'desde $300'], ['Paquete básico', 'desde $500'], ['Paquete completo', 'desde $1,200'], ['Atención a domicilio', 'Cotizar']], horario: [['Lunes a sábado', '9 am – 7 pm']], ticket: 500, cli: [2, 6], margen: .4 }
+  };
+  const OTRO_RX = Object.keys(OTROS).filter(k => OTROS[k].kw.length).map(k => [k, OTROS[k].kw.map(w => w.endsWith('$') ? new RegExp('\\b' + w.slice(0, -1) + '\\b') : new RegExp('\\b' + w))]);
+  function profileFor(text) {
+    const t = norm(text || '').trim();
+    if (!t) return 'generico';
+    for (const [k, rxs] of OTRO_RX) if (rxs.some(rx => rx.test(t))) return k;
+    return 'generico';
+  }
+  function getGiro(st) {
+    if (st.giro !== 'otro') return GIROS[st.giro];
+    const p = OTROS[profileFor(st.otro)];
+    const label = st.otro.trim();
+    return Object.assign({}, p, { label: label || 'Otro', full: label || 'negocio local', demo: 'Tu negocio', titulo: label ? cap(label) : 'Tu negocio' });
+  }
+  const COLORES = [
+    { id: 'rojo', name: 'Rojo', c: '#C62828', d: '#7A1212' },
+    { id: 'rosa', name: 'Rosa', c: '#C2185B', d: '#6E0E35' },
+    { id: 'naranja', name: 'Naranja', c: '#E8590C', d: '#8A3206' },
+    { id: 'verde', name: 'Verde', c: '#15803D', d: '#0A4421' },
+    { id: 'azul', name: 'Azul', c: '#1D4ED8', d: '#102A75' },
+    { id: 'morado', name: 'Morado', c: '#6D28D9', d: '#3B1580' },
+    { id: 'negro', name: 'Negro', c: '#2B2B2E', d: '#0E0E10' }
+  ];
+  const PAQ = [null,
+    { name: 'Arranque', price: '$1,200', time: '3 a 5 días' },
+    { name: 'Básico', price: '$2,900', time: '1 semana' },
+    { name: 'Negocio', price: '$5,500', time: '1 a 2 semanas' },
+    { name: 'Plataforma', price: 'desde $9,900', time: '3 a 6 semanas' }
+  ];
+  const SECCIONES = [
+    { id: 'servicios', label: 'Servicios o menú con precios', nivel: 1 },
+    { id: 'galeria', label: 'Galería de fotos', nivel: 1 },
+    { id: 'horario', label: 'Horario y mapa', nivel: 1 },
+    { id: 'nosotros', label: 'Quiénes somos', nivel: 2 },
+    { id: 'opiniones', label: 'Opiniones de clientes', nivel: 2 },
+    { id: 'promos', label: 'Promociones', nivel: 3 },
+    { id: 'citas', label: 'Agenda de citas', nivel: 3 },
+    { id: 'carrito', label: 'Pedidos en línea con carrito', nivel: 4 },
+    { id: 'pagos', label: 'Pagos con tarjeta', nivel: 4 }
+  ];
+  const HORAS_MS = ['10:00', '12:30', '17:00'];
+  const DIAS_MS = (() => {
+    const out = [], now = new Date();
+    for (let i = 0; out.length < 4 && i < 10; i++) {
+      const x = new Date(now.getFullYear(), now.getMonth(), now.getDate() + i);
+      if (x.getDay() === 0) continue;
+      out.push(i === 0 ? 'Hoy' : cap(x.toLocaleDateString('es-MX', { weekday: 'short' }).replace('.', '')) + ' ' + x.getDate());
+    }
+    return out;
+  })();
+
+  /* ---------- Estado del simulador ---------- */
+  const S = { nombre: '', ciudad: '', giro: 'comida', otro: '', color: 'rojo', colorManual: false, logo: null, secs: new Set(['servicios', 'galeria', 'horario']), cart: 2, msDia: 0, msHora: 1 };
+  const nameOf = st => st.nombre.trim() || getGiro(st).demo;
+  const initials = n => n.split(/\s+/).filter(Boolean).slice(0, 2).map(w => w.charAt(0).toUpperCase()).join('');
+  const colorById = id => COLORES.find(c => c.id === id) || COLORES[0];
+
+  /* ---------- Mini página dentro del celular ---------- */
+  function siteParts(st) {
+    const g = getGiro(st);
+    const name = esc(nameOf(st));
+    const city = esc(st.ciudad.trim() || 'Tu ciudad');
+    const has = id => st.secs.has(id);
+    const logo = st.logo ? '<img src="' + st.logo + '" alt="">' : esc(initials(nameOf(st)));
+    let h = '<div class="ms"><div class="ms-top"><span class="ms-logo">' + logo + '</span><b>' + name + '</b><span class="ms-burger"></span></div>';
+    h += '<div class="ms-hero"><svg class="art"><use href="#' + g.icon + '"/></svg><span class="ms-loc"><svg><use href="#i-pin"/></svg>' + city + '</span><h4>' + esc(g.titulo) + '</h4><p>' + esc(g.frase) + '</p><span class="ms-btn"><svg><use href="#i-wa"/></svg>' + esc(g.cta) + '</span></div>';
+    if (has('promos')) h += '<div class="ms-promo"><svg><use href="#i-spark"/></svg><span>' + esc(g.promo) + '</span></div>';
+    if (has('servicios')) {
+      h += '<div class="ms-sec"><h5>' + g.sec + '</h5>' + g.items.map(it =>
+        '<div class="ms-row"><span>' + esc(it[0]) + '</span><span class="ms-pr"><i>' + esc(it[1]) + '</i>' + (has('carrito') ? '<button class="ms-add" type="button" data-ms-add>Agregar</button>' : '') + '</span></div>'
+      ).join('') + '<p class="ms-note">Precios de ejemplo</p></div>';
+    }
+    if (has('citas')) {
+      h += '<div class="ms-sec"><h5>Agenda tu cita</h5><div class="ms-chips">' + DIAS_MS.map((d, i) => '<span class="ms-chip' + (i === st.msDia ? ' on' : '') + '" data-ms-dia="' + i + '">' + d + '</span>').join('') +
+        '</div><div class="ms-chips">' + HORAS_MS.map((t, i) => '<span class="ms-chip' + (i === st.msHora ? ' on' : '') + '" data-ms-hora="' + i + '">' + t + '</span>').join('') +
+        '</div><span class="ms-btn ms-btn-c">Confirmar cita</span></div>';
+    }
+    if (has('galeria')) {
+      h += '<div class="ms-sec"><h5>Galería</h5></div><div class="ms-gal">' + [0, 1, 2, 3].map(i => (i === 0 && st.logo)
+        ? '<span class="t0"><img src="' + st.logo + '" alt=""></span>'
+        : '<span class="t' + i + '"><svg><use href="#' + g.icon + '"/></svg></span>').join('') + '</div>';
+    }
+    if (has('nosotros')) h += '<div class="ms-sec"><h5>Quiénes somos</h5><p class="ms-muted">Aquí va la historia de ' + name + ': desde cuándo abriste y qué te hace diferente.</p></div>';
+    if (has('opiniones')) h += '<div class="ms-sec"><h5>Opiniones</h5><div class="ms-review"><span class="ms-stars">★★★★★</span><span class="skel" style="width:88%"></span><span class="skel" style="width:62%"></span><small>Aquí van las opiniones reales de tus clientes</small></div></div>';
+    if (has('horario')) h += '<div class="ms-sec"><h5>Horario y ubicación</h5>' + g.horario.map(r => '<div class="ms-row"><span>' + r[0] + '</span><b>' + r[1] + '</b></div>').join('') + '<div class="ms-map"><svg><use href="#i-pinf"/></svg></div></div>';
+    if (has('pagos')) h += '<div class="ms-pay"><div><b>Paga en línea</b><small>Tarjeta de débito o crédito</small></div><span class="ms-cards"><i></i><i></i></span></div>';
+    h += '<div class="ms-foot">© ' + name + '<br>Página hecha por Clicka</div></div>';
+    let f = '';
+    if (has('carrito')) f += '<span class="ms-cart"><span>Tu pedido · ' + st.cart + (st.cart === 1 ? ' producto' : ' productos') + '</span><em>Enviar</em></span>';
+    f += '<span class="ms-fab"><svg><use href="#i-wa"/></svg></span>';
+    return { site: h, float: f };
+  }
+  function paintInto(el, st) {
+    const col = colorById(st.color);
+    el.style.setProperty('--c', col.c);
+    el.style.setProperty('--cd', col.d);
+    const site = $('.site', el), fl = $('.ms-float', el);
+    const y = site.scrollTop;
+    const p = siteParts(st);
+    site.innerHTML = p.site;
+    fl.innerHTML = p.float;
+    site.scrollTop = y;
+  }
+  function paint(flash) {
+    $$('[data-live]').forEach(el => paintInto(el, S));
+    if (flash && !reduce) {
+      const hp = $('#heroPhone');
+      hp.classList.remove('swap'); void hp.offsetWidth; hp.classList.add('swap');
+    }
+    updateSummary();
+  }
+
+  /* ---------- Paquete sugerido ---------- */
+  function suggest(st) {
+    let lvl = 1; const why = [];
+    SECCIONES.forEach(s => {
+      if (!st.secs.has(s.id) || s.nivel < 2) return;
+      if (s.nivel > lvl) { lvl = s.nivel; why.length = 0; }
+      if (s.nivel === lvl) why.push(s.label.toLowerCase());
+    });
+    return { p: PAQ[lvl], lvl, why };
+  }
+  function updateSummary() {
+    const { p, lvl, why } = suggest(S);
+    $$('[data-sum="name"]').forEach(e => { e.textContent = p.name; });
+    $$('[data-sum="price"]').forEach(e => { e.textContent = p.price; });
+    $$('[data-sum="time"]').forEach(e => { e.textContent = p.time; });
+    $$('[data-sum="why"]').forEach(e => { e.textContent = lvl === 1 ? 'Con lo que elegiste te alcanza el paquete de entrada.' : 'Porque elegiste ' + listJoin(why) + '.'; });
+    const secs = SECCIONES.filter(s => S.secs.has(s.id)).map(s => s.label);
+    const msg = [
+      'Hola, diseñé mi página en el simulador de Clicka y la quiero:',
+      '• Negocio: ' + (S.nombre.trim() || '(todavía sin nombre)'),
+      '• Giro: ' + (S.giro === 'otro' ? (S.otro.trim() || 'Otro') : GIROS[S.giro].label),
+      S.ciudad.trim() ? '• Ciudad: ' + S.ciudad.trim() : null,
+      '• Color: ' + colorById(S.color).name,
+      '• Secciones: ' + (secs.length ? secs.join(', ') : 'solo lo básico'),
+      S.logo ? '• Ya tengo logo, te lo mando por aquí' : null,
+      '• Paquete sugerido: ' + p.name + ' (' + p.price + ')'
+    ].filter(Boolean).join('\n');
+    $$('[data-sum="wa"]').forEach(a => { a.href = waUrl(msg); });
+    if (!R.paqManual) R.paq = lvl;
+    roiCalc();
+  }
+
+  /* ---------- Controles del simulador ---------- */
+  const giroChips = Object.keys(GIROS).map(id => '<button class="chip" type="button" data-giro="' + id + '" aria-pressed="false"><svg><use href="#' + GIROS[id].icon + '"/></svg>' + GIROS[id].label + '</button>').join('') + '<button class="chip" type="button" data-giro="otro" aria-pressed="false"><svg><use href="#i-plus"/></svg>Otro</button>';
+  $('#simGiros').innerHTML = giroChips;
+  $('#roiGiros').innerHTML = giroChips;
+  $('#simColores').innerHTML = COLORES.map(c => '<button class="sw" type="button" data-color="' + c.id + '" aria-pressed="false" aria-label="' + c.name + '" title="' + c.name + '" style="--sw:' + c.c + ';--sw2:' + c.d + '"></button>').join('');
+  $('#simSecs').innerHTML = SECCIONES.map(s => '<label class="switch"><input type="checkbox" data-sec="' + s.id + '"' + (S.secs.has(s.id) ? ' checked' : '') + '><span class="sw-ui" aria-hidden="true"></span><span class="sw-txt">' + s.label + '</span><em class="lvl l' + s.nivel + '">' + PAQ[s.nivel].name + '</em></label>').join('');
+
+  function syncPressed() {
+    $$('[data-giro]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.giro === S.giro)));
+    $$('[data-color]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.color === S.color)));
+    $('#otroBox').hidden = S.giro !== 'otro';
+    $('#roiOtroBox').hidden = S.giro !== 'otro';
+  }
+  function applyGiroDefaults() {
+    const g = getGiro(S);
+    if (!S.colorManual) S.color = g.color;
+    if (!R.ticketManual) setTicket(g.ticket);
+  }
+  function setGiro(id) {
+    S.giro = id;
+    R.ticketManual = false;
+    applyGiroDefaults();
+    syncPressed();
+    paint(true);
+  }
+
+  const heroIn = $('#heroNombre'), simIn = $('#simNombre'), cityIn = $('#simCiudad');
+  [heroIn, simIn].forEach(inp => inp.addEventListener('input', () => {
+    S.nombre = inp.value;
+    (inp === heroIn ? simIn : heroIn).value = inp.value;
+    touch(); paint();
+  }));
+  heroIn.addEventListener('focus', () => touch());
+  const otroIns = [$('#simOtro'), $('#roiOtro')], cityIns = [cityIn, $('#roiCiudad')];
+  let lastProfile = 'generico';
+  otroIns.forEach(inp => inp.addEventListener('input', () => {
+    S.otro = inp.value;
+    otroIns.forEach(o => { if (o !== inp) o.value = inp.value; });
+    const pk = profileFor(S.otro);
+    if (pk !== lastProfile) { lastProfile = pk; R.ticketManual = false; }
+    applyGiroDefaults(); syncPressed(); touch(); paint();
+  }));
+  cityIns.forEach(inp => inp.addEventListener('input', () => {
+    S.ciudad = inp.value;
+    cityIns.forEach(o => { if (o !== inp) o.value = inp.value; });
+    touch(); paint();
+  }));
+  $('#simSecs').addEventListener('change', e => {
+    const cb = e.target.closest('[data-sec]');
+    if (!cb) return;
+    if (cb.checked) S.secs.add(cb.dataset.sec); else S.secs.delete(cb.dataset.sec);
+    touch(); paint();
+  });
+
+  const logoIn = $('#simLogo'), logoQuitar = $('#logoQuitar');
+  logoIn.addEventListener('change', () => {
+    const f = logoIn.files && logoIn.files[0];
+    if (!f) return;
+    if (!/^image\//.test(f.type)) { toast('Elige una imagen JPG o PNG.'); return; }
+    const rd = new FileReader();
+    rd.onload = () => {
+      const img = new Image();
+      img.onload = () => {
+        const max = 320, k = Math.min(1, max / Math.max(img.width, img.height));
+        const cv = document.createElement('canvas');
+        cv.width = Math.max(1, Math.round(img.width * k));
+        cv.height = Math.max(1, Math.round(img.height * k));
+        cv.getContext('2d').drawImage(img, 0, 0, cv.width, cv.height);
+        S.logo = cv.toDataURL('image/png');
+        logoQuitar.hidden = false;
+        touch(); paint();
+        toast('Listo, tu imagen ya aparece en la vista previa');
+      };
+      img.onerror = () => toast('No pude abrir esa imagen. Prueba con otra.');
+      img.src = rd.result;
+    };
+    rd.readAsDataURL(f);
+  });
+  logoQuitar.addEventListener('click', () => { S.logo = null; logoIn.value = ''; logoQuitar.hidden = true; paint(); });
+
+  $('#prevOpen').addEventListener('click', () => { document.body.classList.add('prev-open'); $('#simPrev').scrollTop = 0; });
+  $('#prevClose').addEventListener('click', () => document.body.classList.remove('prev-open'));
+
+  /* ---------- Demostración automática en el inicio ---------- */
+  const ORDER = Object.keys(GIROS);
+  let demoOn = !reduce, demoIdx = 0, demoT = null, typeT = null;
+  function typePlaceholder(text) {
+    clearInterval(typeT);
+    let i = 0;
+    heroIn.placeholder = '';
+    typeT = setInterval(() => { i++; heroIn.placeholder = text.slice(0, i); if (i >= text.length) clearInterval(typeT); }, 55);
+  }
+  function demoTick() {
+    if (!demoOn) return;
+    if (document.body.dataset.view === 'inicio' && !document.hidden && document.activeElement !== heroIn) {
+      demoIdx = (demoIdx + 1) % ORDER.length;
+      S.giro = ORDER[demoIdx];
+      applyGiroDefaults();
+      syncPressed(); paint(true);
+      typePlaceholder(GIROS[S.giro].demo);
+    }
+    demoT = setTimeout(demoTick, 3800);
+  }
+  function touch() {
+    if (!demoOn) return;
+    demoOn = false;
+    clearTimeout(demoT); clearInterval(typeT);
+    heroIn.placeholder = 'Ej. ' + GIROS[S.giro].demo;
+  }
+  if (demoOn) demoT = setTimeout(demoTick, 3200);
+
+  /* ---------- Antes y después ---------- */
+  const ba = $('#ba'), baR = $('#baRange');
+  let baHinting = false;
+  const setX = v => ba.style.setProperty('--x', v + '%');
+  baR.addEventListener('input', () => { baHinting = false; setX(baR.value); });
+  function baHint() {
+    const keys = [[0, 50], [700, 22], [1500, 78], [2200, 50]];
+    const t0 = performance.now();
+    baHinting = true;
+    const step = now => {
+      if (!baHinting) return;
+      const t = now - t0;
+      let v = 50;
+      for (let i = 0; i < keys.length - 1; i++) {
+        const a = keys[i], b = keys[i + 1];
+        if (t >= a[0] && t <= b[0]) {
+          const k = (t - a[0]) / (b[0] - a[0]);
+          const e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+          v = a[1] + (b[1] - a[1]) * e;
+        }
+      }
+      setX(v); baR.value = Math.round(v);
+      if (t < keys[keys.length - 1][0]) requestAnimationFrame(step); else { setX(50); baR.value = 50; baHinting = false; }
+    };
+    requestAnimationFrame(step);
+  }
+  if (!reduce && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver(ents => {
+      if (ents.some(en => en.isIntersecting)) { io.disconnect(); baHint(); }
+    }, { threshold: .6 });
+    io.observe(ba);
+  }
+
+  /* ---------- Royal Delivery (maqueta) ---------- */
+  const ROYAL = '<div class="phone"><div class="screen rd"><div class="rd-top"><svg><use href="#i-crown"/></svg><b>Royal Delivery</b></div>' +
+    '<div class="rd-hero"><small>Real Castilla · Atotonilco de Tula</small><h4>Tu mandado, como de la realeza</h4></div>' +
+    '<div class="rd-map"><svg viewBox="0 0 260 150" aria-hidden="true"><rect width="260" height="150" fill="#EDE3CF"/><g stroke="#FFFFFF" stroke-width="9" fill="none"><path d="M0 42H260M0 106H260M72 0V150M184 0V150M0 150L124 0"/></g><path d="M40 120C70 104 74 62 122 54S192 44 216 28" fill="none" stroke="#B3121D" stroke-width="4" stroke-dasharray="7 6" stroke-linecap="round"/><circle cx="40" cy="120" r="8" fill="#1A8A4A" stroke="#FFFFFF" stroke-width="3"/><circle cx="216" cy="28" r="9" fill="#B3121D" stroke="#FFFFFF" stroke-width="3"/></svg><span class="rd-eta">Va en camino</span></div>' +
+    '<div class="rd-card"><span>Tu pedido</span><b>Confirmado</b></div><span class="rd-btn">Pedir mandado</span></div></div>';
+  $$('[data-royal]').forEach(el => { el.innerHTML = ROYAL; });
+
+  /* ---------- Paquetes ---------- */
+  const plans = $$('.plan');
+  function pickGoal(i) {
+    $$('[data-goal]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.goal === i)));
+    plans.forEach((p, j) => p.classList.toggle('pick', j === i));
+    const el = plans[i];
+    if (el && window.matchMedia('(max-width: 1020px)').matches) el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+  }
+
+  const R = { ticket: 120, ticketManual: false, paq: 1, paqManual: false, ai: null };
+  const PAQ_PRICE = [0, 1200, 2900, 5500, 9900];
+  const PAQ_MULT = [0, 1, 1.35, 1.6, 1.8];
+  const PAQ_DESC = ['', 'una página con servicios, fotos, horario, mapa y botón de WhatsApp', 'lo del paquete anterior más galería, opiniones y alta en Google Maps', 'varias secciones, formulario, promociones y conexión con redes sociales', 'pedidos y pagos en línea con cuentas de usuario'];
+  const T_MIN = 20, T_MAX = 200000;
+  const money = n => '$' + Math.round(n).toLocaleString('es-MX');
+  const fillRange = r => r.style.setProperty('--p', ((r.value - r.min) / (r.max - r.min) * 100) + '%');
+  const tToPos = t => Math.round(1000 * Math.log(Math.min(T_MAX, Math.max(T_MIN, t)) / T_MIN) / Math.log(T_MAX / T_MIN));
+  const posToT = pos => {
+    const raw = T_MIN * Math.pow(T_MAX / T_MIN, pos / 1000);
+    const step = raw < 100 ? 5 : raw < 1000 ? 10 : raw < 10000 ? 50 : raw < 50000 ? 500 : 1000;
+    return Math.max(T_MIN, Math.round(raw / step) * step);
+  };
+  const ticketIn = $('#roiTicket'), ticketR = $('#roiTicketR');
+  function setTicket(t) {
+    R.ticket = t;
+    ticketR.value = tToPos(t);
+    fillRange(ticketR);
+    if (document.activeElement !== ticketIn) ticketIn.value = Math.round(t).toLocaleString('es-MX');
+  }
+  ticketR.addEventListener('input', () => {
+    R.ticketManual = true;
+    R.ticket = posToT(+ticketR.value);
+    fillRange(ticketR);
+    ticketIn.value = R.ticket.toLocaleString('es-MX');
+    roiCalc();
+  });
+  ticketIn.addEventListener('input', () => {
+    const n = parseInt(ticketIn.value.replace(/[^\d]/g, ''), 10);
+    if (n > 0) { R.ticketManual = true; R.ticket = Math.min(n, 5000000); ticketR.value = tToPos(R.ticket); fillRange(ticketR); roiCalc(); }
+  });
+  ticketIn.addEventListener('blur', () => { ticketIn.value = Math.round(R.ticket).toLocaleString('es-MX'); });
+
+  function tween(el, to) {
+    const from = el.dataset.v ? +el.dataset.v : to;
+    el.dataset.v = to;
+    if (reduce || from === to) { el.textContent = to; return; }
+    const t0 = performance.now(), d = 380;
+    const step = now => {
+      const k = Math.min(1, (now - t0) / d);
+      el.textContent = Math.round(from + (to - from) * (1 - Math.pow(1 - k, 3)));
+      if (k < 1 && el.dataset.v == to) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+  function estimateAuto() {
+    const g = getGiro(S);
+    const adj = Math.min(1.5, Math.max(.5, Math.pow(g.ticket / R.ticket, .3)));
+    const lo = Math.max(1, Math.round(g.cli[0] * PAQ_MULT[R.paq] * adj));
+    const hi = Math.max(lo + 1, Math.round(g.cli[1] * PAQ_MULT[R.paq] * adj));
+    return { lo, hi, margen: g.margen, why: '' };
+  }
+  const roiKey = () => [S.giro, norm(S.otro.trim()), norm(S.ciudad.trim()), R.ticket, R.paq].join('|');
+  function recoverText(n, lo, hi) {
+    const wMin = n / hi * 4.33, wMax = n / lo * 4.33;
+    if (wMax <= 1) return 'Primera semana';
+    if (wMax <= 5) {
+      const a = Math.max(1, Math.ceil(wMin)), b = Math.max(a, Math.ceil(wMax));
+      return a === b ? a + (a === 1 ? ' semana' : ' semanas') : a + ' a ' + b + ' semanas';
+    }
+    const a = Math.max(1, Math.round(wMin / 4.33)), b = Math.max(a, Math.ceil(wMax / 4.33));
+    if (a > 24) return 'Más de 2 años';
+    return a === b ? a + (a === 1 ? ' mes' : ' meses') : a + ' a ' + b + ' meses';
+  }
+  function roiCalc() {
+    const useAI = !!(R.ai && R.ai.key === roiKey());
+    const e = useAI ? R.ai : estimateAuto();
+    const profit = Math.max(1, R.ticket * e.margen);
+    const n = Math.max(1, Math.ceil(PAQ_PRICE[R.paq] / profit));
+    $$('[data-roi]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.roi === R.paq)));
+    $('#roiCli').textContent = e.lo === e.hi ? String(e.lo) : e.lo + ' a ' + e.hi;
+    tween($('#roiN'), n);
+    $('#roiNlbl').textContent = (n === 1 ? 'venta' : 'ventas') + ' para recuperarla';
+    $('#roiT').textContent = recoverText(n, e.lo, e.hi);
+    $('#roiWhy').textContent = (useAI && e.why ? e.why + ' ' : '') + 'Calculé una ganancia de ' + Math.round(e.margen * 100) + '% por venta, unos ' + money(profit) + '.';
+    const badge = $('#roiBadge');
+    badge.textContent = useAI ? 'Estimado con IA' : 'Estimado automático';
+    badge.classList.toggle('ai', useAI);
+    if (!aiBusy) $('span', aiBtn).textContent = useAI ? 'Volver a calcular con IA' : 'Afinar con IA';
+  }
+
+  /* IA: solo funciona cuando la página se abre dentro de Claude */
+  let sampleFn = null, aiBusy = false;
+  const aiBtn = $('#roiAI');
+  if (window.claude && typeof window.claude.use === 'function') {
+    Promise.resolve(window.claude.use('sample')).then(fn => { if (fn) { sampleFn = fn; aiBtn.hidden = false; } }).catch(() => {});
+  }
+  aiBtn.addEventListener('click', async () => {
+    if (!sampleFn || aiBusy) return;
+    aiBusy = true; aiBtn.disabled = true;
+    $('span', aiBtn).textContent = 'Calculando con IA…';
+    const key = roiKey(), g = getGiro(S);
+    const prompt = [
+      'Eres un asesor de negocios pequeños en México. Estima de forma conservadora y realista cuántos clientes NUEVOS al mes podría conseguir este negocio gracias a una página web sencilla (con botón de WhatsApp, precios, horario y mapa) que el dueño comparte en sus redes y en su local, y el margen de ganancia típico por venta de ese tipo de negocio.',
+      'Tipo de negocio: ' + (S.giro === 'otro' ? (S.otro.trim() || 'negocio local') : g.full),
+      'Ciudad: ' + (S.ciudad.trim() || 'no indicada (México)'),
+      'Cobro promedio por venta o servicio: ' + R.ticket + ' pesos mexicanos',
+      'Paquete de página: ' + PAQ[R.paq].name + ' (' + PAQ_DESC[R.paq] + ')',
+      'Responde solo con un objeto JSON con esta forma: {"clientes_min": 2, "clientes_max": 6, "margen": 0.4, "explicacion": "Una o dos oraciones en español de México, dirigidas al dueño, sin prometer resultados."}'
+    ].join('\n');
+    try {
+      const r = await sampleFn.json(prompt, { modelTier: 'quick' });
+      const lo = Math.round(Number(r && r.clientes_min)), hi = Math.round(Number(r && r.clientes_max)), m = Number(r && r.margen);
+      if (!(lo >= 0 && hi >= lo && hi <= 1000 && m > 0 && m < 1)) throw { code: 'invalid_json' };
+      const lo2 = Math.max(1, lo);
+      R.ai = { key, lo: lo2, hi: Math.max(lo2, hi), margen: Math.min(.9, Math.max(.05, m)), why: typeof r.explicacion === 'string' ? r.explicacion.trim().slice(0, 280) : '' };
+    } catch (e) {
+      const code = e && e.code;
+      if (['not_granted', 'sampling_disabled', 'not_declared', 'capability_disabled', 'capability_removed'].includes(code)) {
+        sampleFn = null; aiBtn.hidden = true;
+        toast('La IA no está disponible aquí; te dejo el estimado automático.');
+      } else if (code === 'rate_limited') {
+        toast('Hubo muchas consultas seguidas. Intenta en un momento.');
+      } else if (code !== 'cancelled') {
+        toast('No pude calcular con IA; te dejo el estimado automático.');
+      }
+    } finally {
+      aiBusy = false; aiBtn.disabled = false;
+      roiCalc();
+    }
+  });
+
+  /* ---------- Proceso ---------- */
+  const STEPS = [
+    { t: 'Eliges tu paquete', d: 'Me escribes o usas el simulador. Platicamos qué necesita tu negocio y te recomiendo el paquete justo, sin venderte de más.', s: 'Por WhatsApp, llamada o videollamada.' },
+    { t: 'Me mandas tu información', d: 'Te paso un cuestionario de 11 preguntas: nombre, servicios y precios, horario, ubicación, fotos, colores y el correo de tu negocio.', s: 'Entre más completa me la mandes, más rápido queda.' },
+    { t: 'Das el 50% de anticipo', d: 'Con el anticipo empiezo a trabajar. El tiempo de entrega cuenta desde que tengo tu información completa y el anticipo.', s: 'Arranque queda en 3 a 5 días.' },
+    { t: 'Revisas y pides cambios', d: 'Te muestro tu página en tu celular antes de publicarla. Me mandas todos tus cambios juntos en un mensaje y los hago en una ronda.', s: 'Arranque incluye 1 ronda de cambios; los demás paquetes, 2.' },
+    { t: 'Pagas el resto y se publica', d: 'Cuando la apruebas, pagas el otro 50% y tu página queda en línea, con la cuenta a tu nombre y lista para compartir.', s: 'Si quieres, te la mantengo al día por $199 al mes.' }
+  ];
+  let stepI = 0;
+  $('#steps').innerHTML = STEPS.map((s, i) => '<li><button class="step" type="button" data-step="' + i + '"><span class="num">' + (i + 1) + '</span><span class="t">' + s.t + '</span></button></li>').join('');
+  function renderStep(i, anim) {
+    stepI = Math.max(0, Math.min(STEPS.length - 1, i));
+    $$('.step').forEach((b, j) => {
+      b.classList.toggle('done', j < stepI);
+      if (j === stepI) b.setAttribute('aria-current', 'step'); else b.removeAttribute('aria-current');
+      b.setAttribute('aria-label', 'Paso ' + (j + 1) + ': ' + STEPS[j].t);
+    });
+    $('#steps').style.setProperty('--prog', stepI / (STEPS.length - 1));
+    const s = STEPS[stepI], det = $('#stepDetail');
+    det.innerHTML = '<span class="k">Paso ' + (stepI + 1) + ' de ' + STEPS.length + '</span><h3>' + s.t + '</h3><p>' + s.d + '</p><small>' + s.s + '</small>';
+    if (anim && !reduce) { det.classList.remove('swap'); void det.offsetWidth; det.classList.add('swap'); }
+    $('#stepPrev').disabled = stepI === 0;
+    $('#stepPrev').style.visibility = stepI === 0 ? 'hidden' : 'visible';
+    const next = $('#stepNext');
+    if (stepI === STEPS.length - 1) { next.innerHTML = 'Ver paquetes<svg><use href="#i-arrow"/></svg>'; next.dataset.go = 'paquetes'; }
+    else { next.innerHTML = 'Siguiente<svg><use href="#i-arrow"/></svg>'; delete next.dataset.go; }
+  }
+  $('#stepPrev').addEventListener('click', () => renderStep(stepI - 1, true));
+  $('#stepNext').addEventListener('click', e => {
+    if (e.currentTarget.dataset.go) { location.hash = e.currentTarget.dataset.go; return; }
+    renderStep(stepI + 1, true);
+  });
+
+  const TL = [['Arranque', 3, 5, '3 a 5 días'], ['Básico', 7, 7, '1 semana'], ['Negocio', 7, 14, '1 a 2 semanas'], ['Plataforma', 21, 42, '3 a 6 semanas']];
+  const TL_MAX = 42;
+  $('#tl').innerHTML = TL.map(r => '<div class="tl-row"><span class="tl-name">' + r[0] + '</span><div class="tl-track" role="img" aria-label="' + r[0] + ': ' + r[3] + '"><i class="tl-solid" style="width:' + (r[1] / TL_MAX * 100) + '%"></i>' +
+    (r[2] > r[1] ? '<i class="tl-range" style="left:' + (r[1] / TL_MAX * 100) + '%;width:' + ((r[2] - r[1]) / TL_MAX * 100) + '%"></i>' : '') +
+    '</div><span class="tl-val">' + r[3] + '</span></div>').join('') +
+    '<div class="tl-axis" aria-hidden="true"><span></span><div class="tl-ticks">' + [0, 1, 2, 3, 4, 5, 6].map(w => '<span style="left:' + (w * 7 / TL_MAX * 100) + '%">' + w + '</span>').join('') + '</div><small>semanas</small></div>';
+
+  const NEED = ['Nombre del negocio y logo, si tienes', 'Qué haces, en una frase', 'Servicios o productos con precio', 'Número de WhatsApp', 'Dirección o ubicación en Google Maps', 'Horario de atención', 'Fotos de tu local, productos o trabajos', 'Redes sociales', 'Colores que te gustan', 'Una página que te guste como ejemplo', 'Correo de Gmail del negocio'];
+  let needDone = store.get('clicka-necesito', []).filter(i => Number.isInteger(i) && i >= 0 && i < NEED.length);
+  $('#need').innerHTML = NEED.map((t, i) => '<li><label class="ck"><input type="checkbox" data-need="' + i + '"' + (needDone.includes(i) ? ' checked' : '') + '><span class="ck-box"><svg><use href="#i-check"/></svg></span><span class="ck-t">' + t + '</span></label></li>').join('');
+  function needUpdate() {
+    const n = needDone.length;
+    $('#needTxt').textContent = n + ' de ' + NEED.length + ' listos';
+    $('#needBar').style.width = (n / NEED.length * 100) + '%';
+    $('#needDone').hidden = n < NEED.length;
+  }
+  $('#need').addEventListener('change', e => {
+    const cb = e.target.closest('[data-need]');
+    if (!cb) return;
+    const i = +cb.dataset.need;
+    needDone = needDone.filter(x => x !== i);
+    if (cb.checked) needDone.push(i);
+    store.set('clicka-necesito', needDone);
+    needUpdate();
+  });
+
+  /* ---------- Preguntas ---------- */
+  const faqItems = $$('#faq details');
+  let faqSearching = false;
+  faqItems.forEach(d => d.addEventListener('toggle', () => {
+    if (d.open && !faqSearching) faqItems.forEach(o => { if (o !== d) o.open = false; });
+  }));
+  $('#faqQ').addEventListener('input', e => {
+    const q = norm(e.target.value.trim());
+    faqSearching = !!q;
+    let shown = 0;
+    faqItems.forEach(d => {
+      const ok = !q || norm(d.textContent).includes(q);
+      d.hidden = !ok;
+      if (ok) shown++;
+      d.open = !!q && ok && shown <= 3;
+    });
+    $('#faqNone').hidden = shown > 0;
+  });
+
+  /* ---------- Contacto: agenda ---------- */
+  const BK = { modo: 'videollamada', dia: -1, hora: -1 };
+  const bkDias = (() => {
+    const out = [], now = new Date();
+    for (let i = 1; out.length < 6 && i < 14; i++) {
+      const x = new Date(now.getFullYear(), now.getMonth(), now.getDate() + i);
+      if (x.getDay() !== 0) out.push(x);
+    }
+    return out;
+  })();
+  $('#bkDias').innerHTML = bkDias.map((d, i) => '<button class="chip" type="button" data-bk-dia="' + i + '" aria-pressed="false">' + cap(d.toLocaleDateString('es-MX', { weekday: 'short' }).replace('.', '')) + ' ' + d.getDate() + '</button>').join('');
+  $('#bkHoras').innerHTML = CFG.horarios.map((h, i) => '<button class="chip" type="button" data-bk-hora="' + i + '" aria-pressed="false">' + h + '</button>').join('');
+  const bkSend = $('#bkSend');
+  function bkUpdate() {
+    $$('[data-bk-dia]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.bkDia === BK.dia)));
+    $$('[data-bk-hora]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.bkHora === BK.hora)));
+    $$('[data-modo]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.modo === BK.modo)));
+    const ready = BK.dia > -1 && BK.hora > -1;
+    bkSend.setAttribute('aria-disabled', String(!ready));
+    $('span', bkSend).textContent = ready ? 'Pedir mi ' + BK.modo + ' por WhatsApp' : 'Elige día y hora';
+    if (ready) {
+      const dl = bkDias[BK.dia].toLocaleDateString('es-MX', { weekday: 'long', day: 'numeric', month: 'long' });
+      const nom = $('#bkNombre').value.trim(), neg = $('#bkNegocio').value.trim();
+      bkSend.href = waUrl([
+        'Hola, quiero agendar una ' + BK.modo + ' para hablar de una página web.',
+        '• Día: ' + dl,
+        '• Hora: ' + CFG.horarios[BK.hora],
+        nom ? '• Mi nombre: ' + nom : null,
+        neg ? '• Mi negocio: ' + neg : null,
+        '¿Te queda bien ese horario?'
+      ].filter(Boolean).join('\n'));
+    } else {
+      bkSend.href = '#';
+    }
+  }
+  bkSend.addEventListener('click', e => {
+    if (bkSend.getAttribute('aria-disabled') === 'true') { e.preventDefault(); toast('Elige un día y una hora'); }
+  });
+  $('#bkNombre').addEventListener('input', bkUpdate);
+  $('#bkNegocio').addEventListener('input', bkUpdate);
+
+  /* ---------- Clics (delegados) ---------- */
+  document.addEventListener('click', e => {
+    const t = e.target;
+    let el;
+    if ((el = t.closest('[data-ms-add]'))) { S.cart++; touch(); paint(); return; }
+    if ((el = t.closest('[data-ms-dia]'))) { S.msDia = +el.dataset.msDia; paint(); return; }
+    if ((el = t.closest('[data-ms-hora]'))) { S.msHora = +el.dataset.msHora; paint(); return; }
+    if ((el = t.closest('[data-pick-otro]'))) { touch(); setGiro('otro'); setTimeout(() => { const o = $('#simOtro'); if (o) o.focus(); }, 350); return; }
+    if ((el = t.closest('[data-giro]'))) { touch(); setGiro(el.dataset.giro); return; }
+    if ((el = t.closest('[data-color]'))) { touch(); S.color = el.dataset.color; S.colorManual = true; syncPressed(); paint(); return; }
+    if ((el = t.closest('[data-goal]'))) { pickGoal(+el.dataset.goal); return; }
+    if ((el = t.closest('[data-roi]'))) { R.paq = +el.dataset.roi; R.paqManual = true; roiCalc(); return; }
+    if ((el = t.closest('[data-step]'))) { renderStep(+el.dataset.step, true); return; }
+    if ((el = t.closest('[data-modo]'))) { BK.modo = el.dataset.modo; bkUpdate(); return; }
+    if ((el = t.closest('[data-bk-dia]'))) { BK.dia = +el.dataset.bkDia; bkUpdate(); return; }
+    if ((el = t.closest('[data-bk-hora]'))) { BK.hora = +el.dataset.bkHora; bkUpdate(); return; }
+    if ((el = t.closest('[data-scroll]'))) { const tg = document.getElementById(el.dataset.scroll); if (tg) tg.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); return; }
+    if ((el = t.closest('a[href^="#"]')) && el.getAttribute('href') === location.hash) { window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }); closeSheet(); }
+  });
+
+  /* ---------- Enlaces, número y copiar ---------- */
+  $$('.wa-link').forEach(a => { a.href = waUrl(a.dataset.msg || 'Hola, quiero información sobre una página web para mi negocio'); });
+  $$('[data-num]').forEach(el => { el.textContent = CFG.numero; });
+  $$('[data-tel]').forEach(a => { a.href = 'tel:+' + CFG.whatsapp; });
+  $$('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
+  $$('[data-work]').forEach(a => {
+    const url = CFG.links[a.dataset.work];
+    if (url) { a.href = url; $('span', a).textContent = 'Ver la página'; }
+    else a.href = waUrl('Hola, ¿me puedes mostrar la página de ' + a.dataset.name + '?');
+  });
+  $$('[data-copy]').forEach(b => b.addEventListener('click', () => {
+    const ok = () => toast('Número copiado: ' + CFG.numero);
+    const fallback = () => {
+      const el = $('#numTxt');
+      if (el) { const r = document.createRange(); r.selectNodeContents(el); const s = window.getSelection(); s.removeAllRanges(); s.addRange(r); }
+      toast('Número seleccionado; cópialo desde el menú');
+    };
+    try { navigator.clipboard.writeText(CFG.numero.replace(/\s/g, '')).then(ok, fallback); } catch (err) { fallback(); }
+  }));
+
+  let toastT;
+  function toast(msg) {
+    const tEl = $('#toast');
+    tEl.textContent = msg; tEl.hidden = false;
+    tEl.classList.remove('show'); void tEl.offsetWidth; tEl.classList.add('show');
+    clearTimeout(toastT);
+    toastT = setTimeout(() => { tEl.hidden = true; }, 2600);
+  }
+
+  /* ---------- Brillo que sigue al puntero ---------- */
+  if (window.matchMedia('(hover: hover)').matches) {
+    document.addEventListener('pointermove', e => {
+      const g = e.target.closest && e.target.closest('.glow');
+      if (!g) return;
+      const r = g.getBoundingClientRect();
+      g.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      g.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    }, { passive: true });
+  }
+
+  /* ---------- Menú del celular ---------- */
+  const sheet = $('#sheet'), menuBtn = $('#menuBtn');
+  function openSheet() { sheet.hidden = false; menuBtn.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; $('#sheetClose').focus(); }
+  function closeSheet() { if (sheet.hidden) return; sheet.hidden = true; menuBtn.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+  menuBtn.addEventListener('click', openSheet);
+  $('#sheetClose').addEventListener('click', closeSheet);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeSheet(); document.body.classList.remove('prev-open'); } });
+
+  /* ---------- Navegación entre secciones ---------- */
+  const VIEWS = ['inicio', 'pruebalo', 'paquetes', 'proceso', 'trabajos', 'preguntas', 'contacto', 'aviso'];
+  const TITLES = {
+    inicio: 'Clicka · Páginas web para negocios en todo México',
+    pruebalo: 'Diseña tu página · Clicka',
+    paquetes: 'Paquetes y precios · Clicka',
+    proceso: 'Cómo trabajo · Clicka',
+    trabajos: 'Trabajos · Clicka',
+    preguntas: 'Preguntas frecuentes · Clicka',
+    contacto: 'Contacto · Clicka',
+    aviso: 'Aviso de privacidad · Clicka'
+  };
+  let firstRoute = true;
+  function route() {
+    let v = '';
+    try { v = decodeURIComponent(location.hash.slice(1)); } catch (e) { v = ''; }
+    if (!VIEWS.includes(v)) v = 'inicio';
+    $$('.view').forEach(sec => {
+      const on = sec.dataset.view === v;
+      sec.hidden = !on;
+      if (on && !firstRoute && !reduce) { sec.classList.remove('enter'); void sec.offsetWidth; sec.classList.add('enter'); }
+    });
+    $$('[data-nav]').forEach(a => {
+      const on = a.getAttribute('href') === '#' + v;
+      a.classList.toggle('active', on);
+      if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    });
+    document.body.dataset.view = v;
+    document.title = TITLES[v];
+    document.body.classList.remove('prev-open');
+    closeSheet();
+    if (!firstRoute) window.scrollTo(0, 0);
+    firstRoute = false;
+  }
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.addEventListener('hashchange', route);
+
+  /* ---------- Arranque ---------- */
+  setTicket(getGiro(S).ticket);
+  syncPressed();
+  paint();
+  const EJEMPLO = { nombre: 'Estética Bella', ciudad: '', giro: 'estetica', otro: '', color: 'rosa', logo: null, secs: new Set(['servicios', 'galeria', 'horario']), cart: 0, msDia: 0, msHora: 1 };
+  $$('[data-static]').forEach(el => paintInto(el, EJEMPLO));
+  renderStep(0, false);
+  needUpdate();
+  bkUpdate();
+  route();
+})();
+</script>
+
+</body>
+</html>
